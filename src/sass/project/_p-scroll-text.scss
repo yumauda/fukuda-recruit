@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.section__marquee {
+  display: flex;
+  white-space: nowrap;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+  overflow-x: clip;
+}
+
+.marquee__text {
+  display: inline-block;
+  padding-right: 0.5em;
+  animation: marquee 30s linear infinite;
+  color: #fff;
+  font-family: $lato-italic;
+  font-size: rem(250);
+  font-weight: 900;
+  letter-spacing: 0.01em;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
