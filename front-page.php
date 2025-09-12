@@ -22,6 +22,45 @@
       </div>
     </div>
   </section>
+  <section class="p-culture">
+    <div class="l-inner">
+      <div class="p-culture__content">
+        <div class="p-culture__detail">
+          <h2 class="c-section-title">
+            <span class="c-section-title__en">Culture</span>
+            <span class="c-section-title__ja">フクダの働き方</span>
+          </h2>
+          <p class="p-culture__text">安心して長く働ける制度と、成長を後押しするキャリアパス。<br>
+            「働きやすさ」も「働きがい」も大切に、ワークライフバランスもしっかり整備。<br>
+            安心して働けるって、こういうこと。</p>
+        </div>
+        <ul class="p-culture__lists p-culture__lists-top">
+          <li class="p-culture__list p-culture__list-1">
+            <a href="#" class="p-culture__link">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/culture_btn1.png" alt="福利厚生" width="770" height="380">
+            </a>
+          </li>
+          <li class="p-culture__list p-culture__list-2">
+            <a href="#" class="p-culture__link">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/culture_btn2.png" alt="環境づくり" width="420" height="680">
+            </a>
+          </li>
+        </ul>
+        <ul class="p-culture__lists p-culture__lists-bottom">
+          <li class="p-culture__list">
+            <a href="#" class="p-culture__link">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/culture_btn3.png" alt="育成・キャリア" width="770" height="380">
+            </a>
+          </li>
+          <li class="p-culture__list">
+            <a href="#" class="p-culture__link">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/culture_btn4.png" alt="数字で見る" width="420" height="680">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
   <div class="section__marquee">
     <p class="marquee__text">Wanna build something? Wanna build something?</p>
     <p class="marquee__text">Wanna build something? Wanna build something?</p>
