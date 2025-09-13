@@ -1,0 +1,34 @@
+@use "global" as *;
+
+/* スライダー全体 */
+.p-scroll-imgText {
+  display: flex; /* スライドのグループを横並び */
+  overflow: hidden; /* はみ出たスライドを隠す */
+  margin-top: rem(127);
+}
+/* スライド3枚のグループ */
+.p-scroll-imgText__slider {
+  animation: scroll-left 40s infinite linear 0.5s both;
+  display: flex; /* スライド3枚を横並び */
+}
+/* スライド */
+.p-scroll-imgText__slide {
+  width: calc(100vw / 0.7); /* 3はスライドの枚数 */
+}
+/* スライドの画像 */
+.p-scroll-imgText__slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+/* CSSアニメーション */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

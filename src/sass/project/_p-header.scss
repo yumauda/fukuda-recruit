@@ -1,0 +1,77 @@
+@use "global" as *;
+
+.p-header {
+  position: fixed;
+  height: rem(100);
+  z-index: 999;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: transparent;
+}
+
+.p-header__inner {
+  padding-left: rem(50);
+  padding-right: rem(50);
+  height: inherit;
+}
+
+.p-header__content {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.p-header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.p-header__home {
+  display: inline-block;
+  width: rem(404);
+}
+
+.p-header__home img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-header__nav {
+  margin-left: auto;
+}
+
+.p-header__lists {
+  display: flex;
+  align-items: center;
+}
+
+.p-header__list + .p-header__list {
+  margin-left: rem(10);
+}
+.p-header__list-drawer {
+  margin-left: rem(18);
+}
+.p-header__link {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: $lato-italic;
+  font-style: italic;
+  font-weight: 900;
+  font-size: rem(26);
+  letter-spacing: 0.05em;
+  background: #f566a5;
+  border-radius: 9999px;
+  padding: rem(20) rem(58);
+}
+.p-header__link-entry {
+  background: #4d4ca1;
+}
+.p-header__drawer {
+}
+
+.p-header__drawer-content {
+}

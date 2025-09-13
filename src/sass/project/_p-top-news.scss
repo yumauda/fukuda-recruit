@@ -1,0 +1,132 @@
+@use "global" as *;
+
+.p-top-news {
+  padding-bottom: rem(220);
+  position: relative;
+  overflow-x: clip;
+}
+.p-top-news::before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  background: url(../images/common/top_news_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 1920 / 1089;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  top: rem(-220);
+  left: 0;
+}
+
+.p-top-news__content {
+  max-width: rem(1200);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba($color: #fff, $alpha: 0.95);
+  border-radius: rem(60);
+  padding: rem(80);
+  display: flex;
+  gap: rem(90);
+}
+
+.p-top-news__left {
+  max-width: rem(190);
+  width: 100%;
+}
+
+.p-top-news__title-wrapper {
+}
+
+.p-top-news__title {
+}
+
+.p-top-news__title-en {
+  font-family: $lato-italic;
+  font-size: rem(20);
+  font-weight: 900;
+  display: block;
+  color: #242424;
+}
+
+.p-top-news__title-ja {
+  display: block;
+  font-weight: 700;
+  font-size: rem(40);
+  color: #242424;
+}
+
+.p-top-news__btn-wrapper {
+  margin-top: rem(27);
+}
+
+.p-top-news__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #242424;
+  border-radius: 9999px;
+  padding: rem(13) rem(27);
+  background: #242424;
+  width: rem(190);
+  height: rem(50);
+}
+
+.p-top-news__btn-text {
+  color: #fff;
+  font-weight: 400;
+  font-size: rem(16);
+}
+
+.p-top-news__btn-icon {
+  width: rem(15);
+  display: inline-block;
+}
+.p-top-news__btn-icon img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-top-news__right {
+  flex: 1;
+  max-width: rem(752);
+  width: 100%;
+}
+
+.p-top-news__lists {
+}
+
+.p-top-news__list {
+}
+
+.p-top-news__link {
+  display: block;
+  padding-top: rem(30);
+  padding-bottom: rem(30);
+  border-top: 1px dotted #ccc;
+}
+.p-top-news__link:last-child {
+  border-bottom: 1px dotted #ccc;
+}
+
+.p-top-news__time {
+  font-family: $lato-italic;
+  font-size: rem(14);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #242424;
+}
+
+.p-top-news__text {
+  margin-top: rem(10);
+  font-size: rem(16);
+  font-weight: 400;
+  line-height: calc(34 / 16);
+  letter-spacing: 0.05em;
+  color: #242424;
+}
