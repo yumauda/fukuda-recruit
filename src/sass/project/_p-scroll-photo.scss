@@ -1,0 +1,58 @@
+@use "global" as *;
+
+/* スライダー全体 */
+.p-scroll-photo {
+  display: flex; /* スライドのグループを横並び */
+  overflow-x: clip; /* はみ出たスライドを隠す */
+  margin-top: rem(127);
+  position: relative;
+}
+.p-scroll-photo::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/scroll_photo_intern_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 1920 / 1169;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  top: rem(-400);
+  left: 0;
+  z-index: 0;
+}
+/* スライド3枚のグループ */
+.p-scroll-photo__slider {
+  animation: scroll-left 20s infinite linear 0.5s both;
+  display: flex; /* スライド3枚を横並び */
+  gap: rem(30);
+}
+.p-scroll-photo__slider + .p-scroll-photo__slider {
+  margin-left: rem(30);
+}
+/* スライド */
+.p-scroll-photo__slide {
+  width: calc(100vw / 5); /* 3はスライドの枚数 */
+}
+.p-scroll-photo__slide:nth-child(odd) {
+  margin-top: rem(30);
+}
+/* スライドの画像 */
+.p-scroll-photo__slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.1));
+}
+/* CSSアニメーション */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

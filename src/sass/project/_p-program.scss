@@ -1,0 +1,132 @@
+@use "global" as *;
+
+.p-program {
+  padding-top: rem(210);
+  position: relative;
+  z-index: 1;
+}
+.p-program::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/program_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1920 / 1883;
+  object-fit: cover;
+  top: rem(80);
+  left: 0;
+  z-index: -1;
+}
+
+.p-program__content {
+  max-width: rem(1200);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-program__title {
+  text-align: center;
+}
+
+.p-program__text-wrapper {
+  margin-top: rem(60);
+  text-align: center;
+}
+
+.p-program__text {
+  font-size: rem(18);
+  color: #242424;
+  font-weight: 400;
+  line-height: calc(34 / 18);
+  letter-spacing: 0.05em;
+}
+.p-program__schedule {
+  background: rgba($color: #fff, $alpha: 0.7);
+  border-radius: rem(50);
+  padding-top: rem(76);
+  padding-left: rem(100);
+  padding-right: rem(100);
+  padding-bottom: rem(60);
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.1));
+  margin-top: rem(40);
+}
+
+.p-program__schedule-flex {
+  display: flex;
+  align-items: center;
+  gap: rem(40);
+}
+
+.p-program__schedule-title {
+  font-size: rem(60);
+  font-weight: 900;
+  color: #242424;
+  font-family: $lato-italic;
+}
+
+.p-program__schedule-ja {
+  font-weight: 700;
+  font-size: rem(18);
+  color: #242424;
+}
+
+.p-program__bottom {
+  text-align: center;
+  margin-top: rem(20);
+}
+
+.p-program__bottom-text {
+}
+
+.p-program__img {
+  margin-top: rem(40);
+}
+.p-program__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-program__lists {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem(60);
+  margin-top: rem(60);
+}
+
+.p-program__list {
+  background: rgba($color: #fff, $alpha: 0.7);
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.1));
+  border-radius: rem(30);
+  padding: rem(30) rem(25);
+}
+
+.p-program__detail {
+  margin-top: rem(-40);
+}
+.p-program__detail-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+.p-program__detail-title {
+  font-size: rem(26);
+  font-weight: 700;
+  color: #242424;
+  letter-spacing: 0.05em;
+}
+
+.p-program__detail-text {
+  margin-top: rem(25);
+  font-size: rem(16);
+  line-height: 2;
+  color: #242424;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}

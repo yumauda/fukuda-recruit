@@ -87,7 +87,7 @@
                 <nav class="p-header__nav">
                     <ul class="p-header__lists">
                         <li class="p-header__list">
-                            <a href="#" class="p-header__link">internship</a>
+                            <a href="<?php echo esc_url(home_url('/intern')); ?>" class="p-header__link">internship</a>
                         </li>
                         <li class="p-header__list">
                             <a href="#" class="p-header__link p-header__link-entry">entry</a>
