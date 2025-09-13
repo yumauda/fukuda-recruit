@@ -8,7 +8,7 @@ let swiper = new Swiper(".swiper1", {
     768: {
       slidesPerView: 2, 
       slidesPerGroup: 2,
-      spaceBetween: 400,
+      spaceBetween: '30%',
     },
   },
 });
