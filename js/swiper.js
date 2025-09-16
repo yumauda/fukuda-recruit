@@ -6,10 +6,30 @@ let swiper = new Swiper(".swiper1", {
   speed: 300,
   breakpoints: {
     768: {
-      slidesPerView: 2, 
+      slidesPerView: 2,
       slidesPerGroup: 2,
-      spaceBetween: '30%',
+      spaceBetween: "30%",
     },
+  },
+});
+
+let swiper2 = new Swiper(".swiper-voice", {
+  loop: true,
+  centeredSlides: true,
+  speed: 300,
+  breakpoints: {
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 50,
+    },
+  },
+  pagination: {
+    el: ".swiper-voice .swiper-pagination", // ← 必須
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 

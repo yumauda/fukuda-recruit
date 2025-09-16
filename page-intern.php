@@ -115,6 +115,177 @@
       </div>
     </div>
   </section>
+  <section class="p-voice">
+    <div class="l-inner">
+      <div class="p-voice__content">
+        <div class="p-voice__title">
+          <h2 class="c-section-title">
+            <span class="c-section-title__en">Voice</span>
+            <span class="c-section-title__ja c-section-title__ja--small">受講生の声</span>
+          </h2>
+        </div>
+        <div class="p-voice__slider">
+          <div class="swiper swiper-voice">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="p-voice__card blue">
+                  <div class="p-voice__list-top">
+                    <figure class="p-voice__img">
+                      <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/voice_img1.png" alt="s.hさん" width="280" height="280">
+                    </figure>
+                    <div class="p-voice__list-detail">
+                      <p class="p-voice__year">2020年度</p>
+                      <p class="p-voice__name"><span>S.H</span>さん</p>
+                    </div>
+                  </div>
+                  <div class="p-voice__text-wrapper">
+                    <p class="p-voice__text">内容が入ります。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-voice__card pink">
+                  <div class="p-voice__list-top">
+                    <figure class="p-voice__img">
+                      <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/voice_img2.png" alt="s.hさん" width="280" height="280">
+                    </figure>
+                    <div class="p-voice__list-detail">
+                      <p class="p-voice__year">2020年度</p>
+                      <p class="p-voice__name"><span>S.H</span>さん</p>
+                    </div>
+                  </div>
+                  <div class="p-voice__text-wrapper">
+                    <p class="p-voice__text">内容が入ります。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="p-voice__card purple">
+                  <div class="p-voice__list-top">
+                    <figure class="p-voice__img">
+                      <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/voice_img3.png" alt="s.hさん" width="280" height="280">
+                    </figure>
+                    <div class="p-voice__list-detail">
+                      <p class="p-voice__year">2020年度</p>
+                      <p class="p-voice__name"><span>S.H</span>さん</p>
+                    </div>
+                  </div>
+                  <div class="p-voice__text-wrapper">
+                    <p class="p-voice__text">内容が入ります。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-voice__card yellow">
+                  <div class="p-voice__list-top">
+                    <figure class="p-voice__img">
+                      <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/voice_img4.png" alt="s.hさん" width="280" height="280">
+                    </figure>
+                    <div class="p-voice__list-detail">
+                      <p class="p-voice__year">2020年度</p>
+                      <p class="p-voice__name"><span>S.H</span>さん</p>
+                    </div>
+                  </div>
+                  <div class="p-voice__text-wrapper">
+                    <p class="p-voice__text">内容が入ります。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="p-voice__card green">
+                  <div class="p-voice__list-top">
+                    <figure class="p-voice__img">
+                      <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/voice_img5.png" alt="s.hさん" width="280" height="280">
+                    </figure>
+                    <div class="p-voice__list-detail">
+                      <p class="p-voice__year">2020年度</p>
+                      <p class="p-voice__name"><span>S.H</span>さん</p>
+                    </div>
+                  </div>
+                  <div class="p-voice__text-wrapper">
+                    <p class="p-voice__text">内容が入ります。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="p-voice__pagination">
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/icon_prev.png" alt="" width="40" height="40">
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination">
+              </div>
+              <div class="swiper-button-next">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/icon_next.png" alt="" width="40" height="40">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="p-entry">
+    <div class="l-inner">
+      <div class="p-entry__content">
+        <div class="p-entry__title">
+          <h2 class="c-section-title">
+            <span class="c-section-title__en">Entry</span>
+            <span class="c-section-title__ja c-section-title__ja--small">参加要件</span>
+          </h2>
+        </div>
+        <p class="p-entry__from">
+          令和7年2月から随時受付
+        </p>
+        <dl class="p-entry__dl">
+          <div class="p-entry__row">
+            <dt class="p-entry__dt">実施日数</dt>
+            <dd class="p-entry__dd">
+              <p class="p-entry__dd-text">①１日、②２～３日間、③５日間</p>
+              <p class="p-entry__dd-small">（ご要望に応じて対応いたします。）</p>
+            </dd>
+          </div>
+          <div class="p-entry__row">
+            <dt class="p-entry__dt">実施時間</dt>
+            <dd class="p-entry__dd">
+              <p class="p-entry__dd-text">午前9時～午後4時</p>
+            </dd>
+          </div>
+          <div class="p-entry__row">
+            <dt class="p-entry__dt">集合場所</dt>
+            <dd class="p-entry__dd">
+              <p class="p-entry__dd-text">（株）フクダ本社（出雲市斐川町荘原2292）</p>
+              <a href="#" class="p-entry__dd-link">
+                <span class="p-entry__dd-icon">
+                  <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/map_icon.png" alt="" width="20" height="20">
+                </span>
+                <p class="p-entry__dd-map">Google Maps</p>
+              </a>
+            </dd>
+          </div>
+          <div class="p-entry__row">
+            <dt class="p-entry__dt">備考</dt>
+            <dd class="p-entry__dd">
+              <p class="p-entry__dd-bold">昼食あり！交通費支給！全学部対象！</p>
+              <p class="p-entry__dd-small">※遠方から来られる方には別途手配があります。</p>
+            </dd>
+          </div>
+        </dl>
+        <div class="p-entry__btn-wrapper">
+          <a href="#" class="p-entry__btn">
+            <p class="p-entry__btn-text">お申し込みはこちら</p>
+            <div class="p-entry__arrow">
+              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_news_btn_icon.png" alt="一覧を見る" width="431" height="38">
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
   <?php get_template_part('includes/submit'); ?>
 </main>
 <?php get_footer() ?>

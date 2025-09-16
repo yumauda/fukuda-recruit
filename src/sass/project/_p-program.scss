@@ -94,9 +94,14 @@
 
 .p-program__lists {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: rem(60);
-  margin-top: rem(60);
+  gap: rem(24);
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: rem(24);
+  @include mq(md) {
+    gap: rem(60);
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: rem(60);
+  }
 }
 
 .p-program__list {
