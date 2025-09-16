@@ -19,6 +19,21 @@
   left: 0;
   z-index: -1;
 }
+.p-page-mv--culture::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/mv_bg_culture.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 1920 / 2227;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
 .p-page-mv__content {
 }
