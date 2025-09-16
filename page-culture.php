@@ -94,7 +94,7 @@
                     勤続20年以上の社員には、ご家族との海外旅行を贈る制度もあります。</p>
                 </div>
               </li>
-              <li class="p-row__list">
+              <li class="p-row__list p-row__list--border">
                 <figure class="p-row__img">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/row_2.png" alt="社内活動" width="100" height="100">
                 </figure>
@@ -113,6 +113,9 @@
                     さらに、社内勉強会を定期的に開き、挑戦する社員をしっかりサポートしています。</p>
                 </div>
               </li>
+
+            </ul>
+            <ul class="p-row__lists">
               <li class="p-row__list">
                 <figure class="p-row__img p-row__img--115">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/row_4.png" alt="メンター制度" width="100" height="100">
@@ -122,7 +125,7 @@
                   <p class="p-row__detail-text">本社にて3か月は年の近い先輩社員が基礎教育を行い、その後現場配属後も年の近い社員が付き一緒に写真管理や安全管理、CADなどの使い方を勉強していきます。</p>
                 </div>
               </li>
-              <li class="p-row__list">
+              <li class="p-row__list p-row__list--border">
                 <figure class="p-row__img">
                   <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/row_5.png" alt="ノー残業デー" width="100" height="100">
                 </figure>
@@ -142,6 +145,54 @@
               </li>
             </ul>
 
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="p-row p-row--second">
+    <div class="l-inner">
+      <div class="p-row__content p-row__content--second">
+        <h3 class="p-row__title-wrapper">
+          <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/row_title_2.png" alt="環境づくり" width="131" height="364">
+        </h3>
+        <div class="p-row__block">
+          <div class="p-row__block-top">
+            <div class="p-row__block-titleWrapper">
+              <h4 class="p-row__block-title">働くこと＝生きること。<br>人を大切にする職場へ。</h4>
+            </div>
+            <div class="p-row__block-textWrapper">
+              <p class="p-row__block-text">社員が元気に、前向きに働き続けられるために。<br>
+                フクダでは「健康経営」や「いきいき職場宣言」などを通して、心身の健康づくりを推進しています。<br>
+                また、子育て支援「こっころ」や女性活躍推進「イメージアップ女子会」、若手が未来を語る「未来牽引」など、<br>
+                世代・性別を超えて支え合える風土づくりに取り組んでいます。<br>
+                働く環境を“仕組み”だけでなく“文化”として育てていく。それが、私たちの目指す職場の姿です。</p>
+            </div>
+            <ul class="p-row__lists p-row__lists--double">
+              <li class="p-row__list p-row__list--first">
+                <figure class="p-row__img p-row__img203">
+                  <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/row_7.png" alt="研修旅行" width="100" height="100">
+                </figure>
+                <div class="p-row__detail">
+                  <p class="p-row__detail-title">しまね建設産業イメージアップ女子会</p>
+                  <p class="p-row__detail-text">もっと女性が働きやすい建設業界を目指して、2014年度「しまね建設産業イメージアップ女子会」が発足、2016年から参加しています。「土木の日」にあわせて建設業で活躍している女性技術者として島根県各地で紹介されました。</p>
+                </div>
+              </li>
+              <li class="p-row__list p-row__list--second">
+                <figure class="p-row__img p-row__img398">
+                  <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/row_8.png" alt="社内活動" width="100" height="100">
+                </figure>
+                <div class="p-row__detail">
+                  <p class="p-row__detail-title">働き方改革の推進</p>
+                  <p class="p-row__detail-text">・健康経営優良法人（中小法人部門）<br>
+                    ・しまね子育て応援企業（こっころカンパニー）<br>
+                    ・しまね女性活躍応援企業<br>
+                    ・しまねいきいき職場宣言企業
+                    ・地域未来けん引企業</p>
+                </div>
+              </li>
+
+            </ul>
           </div>
         </div>
       </div>

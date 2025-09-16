@@ -2507,6 +2507,43 @@ input::placeholder {
 .p-row {
   padding-top: 250px;
   padding-top: 15.625rem;
+  position: relative;
+}
+
+.p-row::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/row_bg1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 1920/1651;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+  top: 160px;
+  top: 10rem;
+  left: 0;
+  z-index: -1;
+}
+
+.p-row--second::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/row_bg2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 1920/1681;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+  top: 100px;
+  top: 6.25rem;
+  left: 0;
+  z-index: -1;
 }
 
 .p-row__content {
@@ -2524,6 +2561,13 @@ input::placeholder {
           flex-direction: row-reverse;
   gap: 63px;
   gap: 3.9375rem;
+}
+
+.p-row__content--second {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .p-row__title-wrapper {
@@ -2545,6 +2589,8 @@ input::placeholder {
   padding: 100px;
   padding: 6.25rem;
   background: rgba(255, 255, 255, .7);
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
   border-radius: 3.125rem;
   filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="15" /><feOffset dx="1" dy="1" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,0.1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
   -webkit-filter: drop-shadow(0 0 15px rgba(0, 0, 0, .1));
@@ -2586,10 +2632,31 @@ input::placeholder {
   margin-top: 5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  row-gap: 10px;
-  -webkit-column-gap: 10px;
-     -moz-column-gap: 10px;
-          column-gap: 10px;
+  -webkit-column-gap: 2.5rem;
+     -moz-column-gap: 2.5rem;
+          column-gap: 2.5rem;
+  row-gap: 80px;
+  row-gap: 5rem;
+}
+
+.p-row__lists + .p-row__lists {
+  margin-top: 40px;
+  margin-top: 2.5rem;
+}
+
+.p-row__lists:nth-child(2n) {
+  padding-top: 40px;
+  padding-top: 2.5rem;
+  border-top: 1px dotted #cccccc;
+}
+
+@media screen and (min-width: 768px) {
+  .p-row__list--border {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    border-left: 1px dotted #cccccc;
+    border-right: 1px dotted #cccccc;
+  }
 }
 
 .p-row__img {
@@ -2605,6 +2672,16 @@ input::placeholder {
   max-width: 7.1875rem;
 }
 
+.p-row__img203 {
+  max-width: 203px;
+  max-width: 12.6875rem;
+}
+
+.p-row__img398 {
+  max-width: 398px;
+  max-width: 24.875rem;
+}
+
 .p-row__img img {
   width: 100%;
   height: auto;
@@ -2612,6 +2689,11 @@ input::placeholder {
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
+}
+
+.p-row__detail {
+  margin-top: 30px;
+  margin-top: 1.875rem;
 }
 
 .p-row__detail-title {
@@ -2632,6 +2714,22 @@ input::placeholder {
   font-weight: 400;
   letter-spacing: 0.05em;
   color: #242424;
+}
+
+.p-row__lists--double {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.p-row__list--first {
+  padding-right: 40px;
+  padding-right: 2.5rem;
+}
+
+.p-row__list--second {
+  padding-left: 40px;
+  padding-left: 2.5rem;
+  border-left: 1px dotted #ccc;
 }
 
 /* スライダー全体 */
