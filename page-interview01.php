@@ -2,7 +2,33 @@
 <main>
   <section class="p-interview">
     <div class="l-inner">
+      <div class="p-interview__scroll p-scroll">
+        <ul class="p-scroll__slider">
+          <li class="p-scroll__slide">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/scroll_text_img.png" alt="金属の未来をリファイン" width="431" height="38">
+          </li>
+          <li class="p-scroll__slide">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/scroll_text_img.png" alt="金属の未来をリファイン" width="431" height="38">
+          </li>
+          <li class="p-scroll__slide">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/scroll_text_img.png" alt="金属の未来をリファイン" width="431" height="38">
+          </li>
+        </ul>
+        <ul class="p-scroll__slider">
+          <li class="p-scroll__slide">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/scroll_text_img.png" alt="金属の未来をリファイン" width="431" height="38">
+          </li>
+          <li class="p-scroll__slide">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/scroll_text_img.png" alt="金属の未来をリファイン" width="431" height="38">
+          </li>
+          <li class="p-scroll__slide">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/scroll_text_img.png" alt="金属の未来をリファイン" width="431" height="38">
+          </li>
+        </ul>
+
+      </div>
       <div class="p-interview__content">
+
         <div class="p-interview__detail">
           <h2 class="p-interview__title">信頼を築き<br>成果を目指すヒト</h2>
           <p class="p-interview__en">KENSUKE.Y</p>
@@ -11,6 +37,31 @@
         <figure class="p-interview__img">
           <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/interview_top1.png" alt="信頼を築き成果を目指すヒト" width="618" height="713">
         </figure>
+      </div>
+      <div class="p-interview__scroll p-scroll">
+        <ul class="p-scroll__slider">
+          <li class="p-scroll__slide">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/scroll_text_img.png" alt="金属の未来をリファイン" width="431" height="38">
+          </li>
+          <li class="p-scroll__slide">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/scroll_text_img.png" alt="金属の未来をリファイン" width="431" height="38">
+          </li>
+          <li class="p-scroll__slide">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/scroll_text_img.png" alt="金属の未来をリファイン" width="431" height="38">
+          </li>
+        </ul>
+        <ul class="p-scroll__slider">
+          <li class="p-scroll__slide">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/scroll_text_img.png" alt="金属の未来をリファイン" width="431" height="38">
+          </li>
+          <li class="p-scroll__slide">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/scroll_text_img.png" alt="金属の未来をリファイン" width="431" height="38">
+          </li>
+          <li class="p-scroll__slide">
+            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/scroll_text_img.png" alt="金属の未来をリファイン" width="431" height="38">
+          </li>
+        </ul>
+
       </div>
     </div>
   </section>
@@ -91,7 +142,7 @@
           <h3 class="p-top-people__top-title">
             <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/people_logo_white.png" alt="FUKUDAひと図鑑" width="396" height="239">
           </h3>
-          
+
         </div>
         <div class="p-top-people__swiper p-top-people__swiper--interview">
           <!-- Slider main container -->
@@ -164,7 +215,7 @@
                   <figure class="p-top-people__img w429">
                     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_6.png" alt="" width="499" height="574">
                   </figure>
-                  <div class="p-top-people__detail">
+                  <div class="p-top-people__detail p-top-people__detail--429">
                     <h3 class="p-top-people__title">前向きに<br>学び続けるヒト</h3>
                     <p class="p-top-people__en">REMI.A</p>
                     <p class="p-top-people__occupation">総務</p>

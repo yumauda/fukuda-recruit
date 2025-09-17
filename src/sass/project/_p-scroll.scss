@@ -1,0 +1,46 @@
+@use "global" as *;
+
+/* スライダー全体 */
+.p-scroll {
+  display: flex; /* スライドのグループを横並び */
+  overflow-x: clip; /* はみ出たスライドを隠す */
+  position: relative;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+}
+
+.p-scroll--culture::before {
+  display: none;
+}
+/* スライド3枚のグループ */
+.p-scroll__slider {
+  animation: scroll-left 60s infinite linear 0.5s both;
+  display: flex; /* スライド3枚を横並び */
+  gap: rem(30);
+}
+.p-scroll__slider + .p-scroll__slider {
+  margin-left: rem(30);
+}
+/* スライド */
+.p-scroll__slide {
+  width: calc(100vw / 0.8); /* 3はスライドの枚数 */
+}
+/* スライドの画像 */
+.p-scroll__slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.1));
+}
+/* CSSアニメーション */
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

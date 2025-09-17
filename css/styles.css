@@ -2549,9 +2549,9 @@ input::placeholder {
 }
 
 .p-interview {
-  padding-top: 140px;
-  padding-top: 8.75rem;
   position: relative;
+  padding-top: 60px;
+  padding-top: 3.75rem;
 }
 
 .p-interview::before {
@@ -2586,6 +2586,8 @@ input::placeholder {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -88px;
+  margin-top: -5.5rem;
 }
 
 .p-interview__detail {
@@ -3345,6 +3347,68 @@ input::placeholder {
             transform: translateX(0);
   }
   100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+/* スライダー全体 */
+.p-scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; /* スライドのグループを横並び */
+  overflow-x: clip; /* はみ出たスライドを隠す */
+  position: relative;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+}
+
+.p-scroll--culture::before {
+  display: none;
+}
+
+/* スライド3枚のグループ */
+.p-scroll__slider {
+  -webkit-animation: scroll-left 60s infinite linear 0.5s both;
+          animation: scroll-left 60s infinite linear 0.5s both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; /* スライド3枚を横並び */
+  gap: 30px;
+  gap: 1.875rem;
+}
+
+.p-scroll__slider + .p-scroll__slider {
+  margin-left: 30px;
+  margin-left: 1.875rem;
+}
+
+/* スライド */
+.p-scroll__slide {
+  width: 125vw; /* 3はスライドの枚数 */
+}
+
+/* スライドの画像 */
+.p-scroll__slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="15" /><feOffset dx="1" dy="1" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,0.1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+  -webkit-filter: drop-shadow(0 0 15px rgba(0, 0, 0, .1));
+          filter: drop-shadow(0 0 15px rgba(0, 0, 0, .1));
+}
+
+/* CSSアニメーション */
+@keyframes scroll-left {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
   }
@@ -4109,6 +4173,11 @@ input::placeholder {
 .p-top-people__detail {
   margin-top: -80px;
   margin-top: -5rem;
+}
+
+.p-top-people__detail--429 {
+  margin-top: -200px;
+  margin-top: -12.5rem;
 }
 
 .p-top-people__detail--right {
