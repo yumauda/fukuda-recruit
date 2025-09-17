@@ -1,0 +1,134 @@
+@use "global" as *;
+
+.p-inter {
+  padding-top: rem(150);
+  padding-bottom: rem(150);
+  position: relative;
+}
+.p-inter::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/interview_bg2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 1920 / 2088;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  left: 0;
+  top: rem(860);
+  z-index: -1;
+}
+.p-inter::after {
+  position: absolute;
+  content: "";
+  background: url(../images/common/interview_bg3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 1920 / 1155;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  left: 0;
+  top: rem(3160);
+  z-index: -1;
+}
+
+
+.p-inter__content {
+  max-width: rem(1200);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-inter__img {
+}
+.p-inter__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-inter__row {
+  margin-top: rem(80);
+  display: flex;
+  flex-direction: row-reverse;
+  gap: rem(70);
+}
+.p-inter__row--reverse {
+  flex-direction: row;
+  margin-top: rem(180);
+}
+.p-inter__detail {
+  max-width: rem(600);
+  width: 100%;
+}
+
+.p-inter__detail-top {
+  display: flex;
+  align-items: center;
+  gap: rem(15);
+}
+
+.p-inter__num {
+  color: #fff;
+  font-family: $lato-italic;
+  font-size: rem(16);
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+.p-inter__sub {
+  font-size: rem(16);
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.p-inter__title {
+  font-size: rem(36);
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+
+.p-inter__detail-textWrapper {
+  margin-top: rem(30);
+}
+
+.p-inter__detail-text {
+  font-size: rem(18);
+  line-height: calc(34 / 18);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+
+.p-inter__rowImg {
+  max-width: rem(530);
+  width: 100%;
+}
+.p-inter__rowImg img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-inter__img2 {
+  margin-top: rem(180);
+}
+.p-inter__img2 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-inter__detail-middle {
+  margin-top: rem(80);
+}

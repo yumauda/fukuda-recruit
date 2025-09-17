@@ -20,6 +20,9 @@
   top: 0;
   left: 0;
 }
+.p-top-people--interview::before {
+  display: none;
+}
 
 .p-top-people__content {
 }
@@ -79,6 +82,9 @@
   margin-right: calc(50% - 50vw);
   width: 100vw;
   margin-top: rem(-560);
+}
+.p-top-people__swiper--interview {
+  margin-top: rem(-440);
 }
 .p-top-people__item {
   position: relative;

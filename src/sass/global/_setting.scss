@@ -95,7 +95,12 @@ $mediaquerys: (
 body.drawer-open {
   overflow: hidden;
 }
-body {
+.home {
   background: #f6f6f6;
+  overflow-x: clip;
+}
+
+.body-blue {
+  background: #3db5e5;
   overflow-x: clip;
 }

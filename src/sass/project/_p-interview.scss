@@ -1,0 +1,70 @@
+@use "global" as *;
+
+.p-interview {
+  padding-top: rem(140);
+  position: relative;
+}
+.p-interview::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/interview_bg1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 1920 / 1678;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.p-interview__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: rem(1200);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-interview__detail {
+  margin-right: rem(-56);
+  margin-top: rem(120);
+}
+
+.p-interview__title {
+  font-size: rem(90);
+  font-weight: 900;
+  color: #fff;
+  line-height: calc(120 / 90);
+}
+
+.p-interview__en {
+  font-family: $lato-italic;
+  font-size: rem(30);
+  font-weight: 700;
+  color: #fff;
+  margin-top: rem(30);
+}
+
+.p-interview__occupation {
+  font-size: rem(14);
+  margin-top: rem(4);
+  color: #fff;
+  font-weight: 700;
+}
+
+.p-interview__img {
+  max-width: rem(618);
+  width: 100%;
+  margin-right: rem(-131);
+}
+.p-interview__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
