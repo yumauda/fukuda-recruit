@@ -2224,6 +2224,151 @@ input::placeholder {
   border: 1px solid #ed1c24;
 }
 
+.p-info {
+  padding-top: 87px;
+  padding-top: 5.4375rem;
+  padding-bottom: 100px;
+  padding-bottom: 6.25rem;
+  position: relative;
+}
+
+.p-info::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/info_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 1920/2453;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+  top: 660px;
+  top: 41.25rem;
+  left: 0;
+  z-index: -1;
+}
+
+.p-info__content {
+  max-width: 1400px;
+  max-width: 87.5rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-info__title {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #242424;
+  letter-spacing: 0.05em;
+}
+
+.p-info__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  gap: 0.625rem;
+  margin-top: 10px;
+  margin-top: 0.625rem;
+}
+
+.p-info__grid + .p-info__grid {
+  margin-top: 10px;
+  margin-top: 0.625rem;
+}
+
+.p-info__box {
+  background: rgba(255, 255, 255, .7);
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+  border-radius: 3.125rem;
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="15" /><feOffset dx="1" dy="1" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,0.1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+  -webkit-filter: drop-shadow(0 0 15px rgba(0, 0, 0, .1));
+          filter: drop-shadow(0 0 15px rgba(0, 0, 0, .1));
+}
+
+.p-info__img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.p-info__box--transparent {
+  background: transparent;
+}
+
+.p-info__box--nopadding {
+  padding: 0;
+  padding: initial;
+}
+
+.p-info__row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  gap: 0.625rem;
+  margin-top: 10px;
+  margin-top: 0.625rem;
+}
+
+.p-info__row-box {
+  background: rgba(255, 255, 255, .7);
+  -webkit-backdrop-filter: blur(16px);
+          backdrop-filter: blur(16px);
+  border-radius: 3.125rem;
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur in="SourceAlpha" stdDeviation="15" /><feOffset dx="1" dy="1" result="offsetblur" /><feFlood flood-color="rgba(0,0,0,0.1)" /><feComposite in2="offsetblur" operator="in" /><feMerge><feMergeNode /><feMergeNode in="SourceGraphic" /></feMerge></filter></svg>#filter');
+  -webkit-filter: drop-shadow(0 0 15px rgba(0, 0, 0, .1));
+          filter: drop-shadow(0 0 15px rgba(0, 0, 0, .1));
+}
+
+.p-info__row-img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.p-info__triple {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  margin-top: 0.625rem;
+  gap: 10px;
+  gap: 0.625rem;
+}
+
+.p-info__flex-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  gap: 0.625rem;
+}
+
+.p-info__bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  gap: 0.625rem;
+  margin-top: 10px;
+  margin-top: 0.625rem;
+}
+
+.p-info__box-column {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  gap: 0.625rem;
+}
+
 .p-mv {
   position: relative;
   z-index: 2;
@@ -2268,6 +2413,23 @@ input::placeholder {
   background-position: center;
   background-size: cover;
   aspect-ratio: 1920/2227;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.p-page-mv--infographics::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/mv_bg_infographics.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 1920/910;
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;

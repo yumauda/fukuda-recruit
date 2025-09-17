@@ -1,0 +1,109 @@
+@use "global" as *;
+
+.p-info {
+  padding-top: rem(87);
+  padding-bottom: rem(100);
+  position: relative;
+}
+.p-info::before {
+  position: absolute;
+  content: "";
+  background: url(../images/common/info_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 1920 / 2453;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  top: rem(660);
+  left: 0;
+  z-index: -1;
+}
+
+.p-info__content {
+  max-width: rem(1400);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-info__title {
+  font-size: rem(24);
+  font-weight: 700;
+  color: #242424;
+  letter-spacing: 0.05em;
+}
+.p-info__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: rem(10);
+  margin-top: rem(10);
+}
+.p-info__grid + .p-info__grid {
+  margin-top: rem(10);
+}
+.p-info__box {
+  background: rgba($color: #fff, $alpha: 0.7);
+  backdrop-filter: blur(16px);
+  border-radius: rem(50);
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.1));
+}
+
+.p-info__img {
+}
+.p-info__img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.p-info__box--transparent {
+  background: transparent;
+}
+.p-info__box--nopadding {
+  padding: initial;
+}
+.p-info__row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem(10);
+  margin-top: rem(10);
+}
+
+.p-info__row-box {
+  background: rgba($color: #fff, $alpha: 0.7);
+  backdrop-filter: blur(16px);
+  border-radius: rem(50);
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.1));
+}
+
+.p-info__row-img {
+}
+.p-info__row-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+.p-info__triple {
+  display: flex;
+  margin-top: rem(10);
+  gap: rem(10);
+}
+.p-info__flex-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem(10);
+}
+.p-info__bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem(10);
+  margin-top: rem(10);
+}
+.p-info__box-column {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: rem(10);
+}
