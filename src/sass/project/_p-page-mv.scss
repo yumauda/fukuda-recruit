@@ -2,8 +2,11 @@
 
 .p-page-mv {
   position: relative;
-  padding-top: rem(221);
   overflow-x: clip;
+  padding-top: rem(160);
+  @include mq(md) {
+    padding-top: rem(221);
+  }
 }
 .p-page-mv--intern::before {
   position: absolute;
@@ -12,13 +15,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  aspect-ratio: 1920 / 1299;
   object-fit: cover;
   width: 100%;
   height: auto;
-  top: 0;
   left: 0;
+  aspect-ratio: 1000 / 1299;
   z-index: -1;
+  top: rem(64);
+  @include mq(md) {
+    top: 0;
+    aspect-ratio: 1920 / 1299;
+  }
 }
 .p-page-mv--culture::before {
   position: absolute;
@@ -27,13 +34,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  aspect-ratio: 1920 / 2227;
   object-fit: cover;
   width: 100%;
   height: auto;
   top: 0;
   left: 0;
   z-index: -1;
+  aspect-ratio: 900 / 2227;
+
+  @include mq(md) {
+    aspect-ratio: 1920 / 2227;
+  }
 }
 .p-page-mv--career::before {
   position: absolute;
@@ -80,23 +91,33 @@
   display: block;
   font-weight: 900;
   font-style: italic;
-  font-size: rem(160);
   color: #242424;
+  font-size: rem(48);
+  @include mq(md) {
+    font-size: rem(160);
+  }
 }
 
 .p-page-mv__title-ja {
   color: #242424;
   display: block;
-  font-size: rem(50);
   font-weight: 900;
+  font-size: rem(20);
+  @include mq(md) {
+    font-size: rem(50);
+  }
 }
 
 .p-page-mv__img {
-  max-width: rem(744);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: rem(122);
+  margin-top: rem(24);
+  @include mq(md) {
+    margin-top: initial;
+    max-width: rem(744);
+    margin-top: rem(122);
+  }
 }
 .p-page-mv__img img {
   width: 100%;
@@ -106,14 +127,23 @@
 }
 
 .p-page-mv__text-wrapper {
-  margin-top: rem(90);
   text-align: center;
+  margin-top: rem(56);
+  position: relative;
+  z-index: 1;
+  @include mq(md) {
+    margin-top: rem(90);
+  }
 }
 
 .p-page-mv__text {
-  font-size: rem(26);
   color: #242424;
-  line-height: calc(90 / 26);
   font-weight: 700;
   letter-spacing: 0.05em;
+  font-size: rem(14);
+  line-height: 2.5;
+  @include mq(md) {
+    line-height: calc(90 / 26);
+    font-size: rem(26);
+  }
 }

@@ -1,9 +1,13 @@
 @use "global" as *;
 
 .p-info {
-  padding-top: rem(87);
-  padding-bottom: rem(100);
   position: relative;
+  padding-top: rem(40);
+  padding-bottom: rem(40);
+  @include mq(md) {
+    padding-top: rem(87);
+    padding-bottom: rem(100);
+  }
 }
 .p-info::before {
   position: absolute;
@@ -27,17 +31,16 @@
   margin-left: auto;
   margin-right: auto;
 }
-.p-info__title {
-  font-size: rem(24);
-  font-weight: 700;
-  color: #242424;
-  letter-spacing: 0.05em;
-}
+
 .p-info__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: rem(10);
   margin-top: rem(10);
+  grid-template-columns: repeat(1, 1fr);
+
+  @include mq(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .p-info__grid + .p-info__grid {
   margin-top: rem(10);
@@ -45,8 +48,11 @@
 .p-info__box {
   background: rgba($color: #fff, $alpha: 0.7);
   backdrop-filter: blur(16px);
-  border-radius: rem(50);
   filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.1));
+  border-radius: rem(12);
+  @include mq(md) {
+    border-radius: rem(50);
+  }
 }
 
 .p-info__img {
@@ -66,16 +72,22 @@
 }
 .p-info__row {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: rem(10);
   margin-top: rem(10);
+  @include mq(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .p-info__row-box {
   background: rgba($color: #fff, $alpha: 0.7);
   backdrop-filter: blur(16px);
-  border-radius: rem(50);
   filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.1));
+  border-radius: rem(12);
+  @include mq(md) {
+    border-radius: rem(50);
+  }
 }
 
 .p-info__row-img {
@@ -93,14 +105,20 @@
 }
 .p-info__flex-wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: rem(10);
+  @include mq(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .p-info__bottom {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: rem(10);
   margin-top: rem(10);
+  @include mq(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .p-info__box-column {
   display: grid;

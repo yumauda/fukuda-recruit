@@ -15,9 +15,12 @@
   animation: marquee 30s linear infinite;
   color: #fff;
   font-family: $lato-italic;
-  font-size: rem(250);
   font-weight: 900;
   letter-spacing: 0.01em;
+  font-size: rem(80);
+  @include mq(md) {
+    font-size: rem(250);
+  }
 }
 
 @keyframes marquee {

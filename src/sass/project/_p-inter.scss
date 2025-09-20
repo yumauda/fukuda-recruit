@@ -1,9 +1,13 @@
 @use "global" as *;
 
 .p-inter {
-  padding-top: rem(150);
-  padding-bottom: rem(150);
   position: relative;
+  padding-top: rem(56);
+  padding-bottom: rem(56);
+  @include mq(md) {
+    padding-top: rem(150);
+    padding-bottom: rem(150);
+  }
 }
 .p-inter::before {
   position: absolute;
@@ -36,7 +40,6 @@
   z-index: -1;
 }
 
-
 .p-inter__content {
   max-width: rem(1200);
   width: 100%;
@@ -54,18 +57,29 @@
 }
 
 .p-inter__row {
-  margin-top: rem(80);
   display: flex;
-  flex-direction: row-reverse;
-  gap: rem(70);
+  flex-direction: column;
+  margin-top: rem(40);
+  gap: rem(24);
+  @include mq(md) {
+    margin-top: rem(80);
+    gap: rem(70);
+    flex-direction: row-reverse;
+  }
 }
 .p-inter__row--reverse {
-  flex-direction: row;
-  margin-top: rem(180);
+  flex-direction: column;
+  margin-top: rem(40);
+  @include mq(md) {
+    flex-direction: row;
+    margin-top: rem(180);
+  }
 }
 .p-inter__detail {
-  max-width: rem(600);
   width: 100%;
+  @include mq(md) {
+    max-width: rem(600);
+  }
 }
 
 .p-inter__detail-top {
@@ -77,40 +91,57 @@
 .p-inter__num {
   color: #fff;
   font-family: $lato-italic;
-  font-size: rem(16);
   letter-spacing: 0.05em;
   font-weight: 500;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }
 
 .p-inter__sub {
-  font-size: rem(16);
   color: #fff;
   font-weight: 400;
   letter-spacing: 0.05em;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }
 
 .p-inter__title {
-  font-size: rem(36);
   font-weight: 900;
   color: #fff;
   letter-spacing: 0.05em;
+  font-size: rem(20);
+  @include mq(md) {
+    font-size: rem(36);
+  }
 }
 
 .p-inter__detail-textWrapper {
-  margin-top: rem(30);
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(30);
+  }
 }
 
 .p-inter__detail-text {
-  font-size: rem(18);
   line-height: calc(34 / 18);
   font-weight: 400;
   letter-spacing: 0.05em;
   color: #fff;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(18);
+  }
 }
 
 .p-inter__rowImg {
-  max-width: rem(530);
   width: 100%;
+  @include mq(md) {
+    max-width: rem(530);
+  }
 }
 .p-inter__rowImg img {
   width: 100%;
@@ -120,7 +151,10 @@
 }
 
 .p-inter__img2 {
-  margin-top: rem(180);
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(180);
+  }
 }
 .p-inter__img2 img {
   width: 100%;
@@ -130,5 +164,8 @@
 }
 
 .p-inter__detail-middle {
-  margin-top: rem(80);
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(80);
+  }
 }

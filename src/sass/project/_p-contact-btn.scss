@@ -1,7 +1,10 @@
 @use "global" as *;
 
 .p-contact-btn {
-  margin-top: rem(113);
+  margin-top: rem(49);
+  @include mq(md) { 
+    margin-top: rem(113);
+  }
 }
 
 .p-contact-btn__content {

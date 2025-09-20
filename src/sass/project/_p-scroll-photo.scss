@@ -4,8 +4,11 @@
 .p-scroll-photo {
   display: flex; /* スライドのグループを横並び */
   overflow-x: clip; /* はみ出たスライドを隠す */
-  margin-top: rem(127);
   position: relative;
+  margin-top: rem(56);
+  @include mq(md) {
+    margin-top: rem(127);
+  }
 }
 .p-scroll-photo::before {
   position: absolute;
@@ -30,17 +33,30 @@
 .p-scroll-photo__slider {
   animation: scroll-left 20s infinite linear 0.5s both;
   display: flex; /* スライド3枚を横並び */
-  gap: rem(30);
+  gap: rem(10);
+  @include mq(md){
+    gap: rem(30);
+    
+  }
 }
 .p-scroll-photo__slider + .p-scroll-photo__slider {
-  margin-left: rem(30);
+  margin-left: rem(10);
+  @include mq(md){
+    margin-left: rem(30);
+  }
 }
 /* スライド */
 .p-scroll-photo__slide {
-  width: calc(100vw / 5); /* 3はスライドの枚数 */
+  width: calc(100vw / 3); /* 3はスライドの枚数 */
+  @include mq(md){
+    width: calc(100vw / 5); /* 3はスライドの枚数 */
+  }
 }
 .p-scroll-photo__slide:nth-child(odd) {
-  margin-top: rem(30);
+  margin-top: rem(15);
+  @include mq(md){
+    margin-top: rem(30);
+  }
 }
 /* スライドの画像 */
 .p-scroll-photo__slide img {

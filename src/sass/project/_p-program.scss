@@ -1,9 +1,12 @@
 @use "global" as *;
 
 .p-program {
-  padding-top: rem(210);
-  position: relative;
   z-index: 1;
+  position: relative;
+  padding-top: rem(64);
+  @include mq(md) {
+    padding-top: rem(210);
+  }
 }
 .p-program::before {
   position: absolute;
@@ -33,45 +36,67 @@
 }
 
 .p-program__text-wrapper {
-  margin-top: rem(60);
-  text-align: center;
+  margin-top: rem(40);
+  @include mq(md) {
+    text-align: center;
+    margin-top: rem(60);
+  }
 }
 
 .p-program__text {
-  font-size: rem(18);
   color: #242424;
   font-weight: 400;
   line-height: calc(34 / 18);
   letter-spacing: 0.05em;
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(18);
+  }
 }
 .p-program__schedule {
   background: rgba($color: #fff, $alpha: 0.7);
-  border-radius: rem(50);
-  padding-top: rem(76);
-  padding-left: rem(100);
-  padding-right: rem(100);
-  padding-bottom: rem(60);
   filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.1));
-  margin-top: rem(40);
+  padding: rem(16);
+  margin-top: rem(24);
+  border-radius: rem(20);
+  @include mq(md) {
+    border-radius: rem(50);
+    padding-top: rem(76);
+    padding-left: rem(100);
+    padding-right: rem(100);
+    padding-bottom: rem(60);
+    margin-top: rem(40);
+  }
 }
 
 .p-program__schedule-flex {
   display: flex;
   align-items: center;
-  gap: rem(40);
+  flex-direction: column;
+  gap: rem(4);
+  @include mq(md) {
+    gap: rem(40);
+    flex-direction: row;
+  }
 }
 
 .p-program__schedule-title {
-  font-size: rem(60);
   font-weight: 900;
   color: #242424;
   font-family: $lato-italic;
+  font-size: rem(24);
+  @include mq(md) {
+    font-size: rem(60);
+  }
 }
 
 .p-program__schedule-ja {
   font-weight: 700;
-  font-size: rem(18);
   color: #242424;
+  font-size: rem(12);
+  @include mq(md) {
+    font-size: rem(14);
+  }
 }
 
 .p-program__bottom {
@@ -80,10 +105,19 @@
 }
 
 .p-program__bottom-text {
+  font-weight: 400;
+  color: #242424;
+  font-size: rem(12);
+  @include mq(md) {
+    font-size: rem(14);
+  }
 }
 
 .p-program__img {
-  margin-top: rem(40);
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
 }
 .p-program__img img {
   width: 100%;
@@ -107,12 +141,19 @@
 .p-program__list {
   background: rgba($color: #fff, $alpha: 0.7);
   filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.1));
-  border-radius: rem(30);
-  padding: rem(30) rem(25);
+  padding: rem(16);
+  border-radius: rem(16);
+  @include mq(md) {
+    padding: rem(30) rem(25);
+    border-radius: rem(30);
+  }
 }
 
 .p-program__detail {
-  margin-top: rem(-40);
+  margin-top: rem(8);
+  @include mq(md) {
+    margin-top: rem(-40);
+  }
 }
 .p-program__detail-img img {
   width: 100%;
@@ -121,17 +162,24 @@
   object-position: center center;
 }
 .p-program__detail-title {
-  font-size: rem(26);
   font-weight: 700;
   color: #242424;
   letter-spacing: 0.05em;
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(26);
+  }
 }
 
 .p-program__detail-text {
-  margin-top: rem(25);
-  font-size: rem(16);
   line-height: 2;
   color: #242424;
   font-weight: 400;
   letter-spacing: 0.05em;
+  margin-top: rem(12);
+  font-size: rem(14);
+  @include mq(md) {
+    margin-top: rem(25);
+    font-size: rem(16);
+  }
 }

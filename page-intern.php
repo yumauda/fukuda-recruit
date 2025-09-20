@@ -13,12 +13,12 @@
           <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/page_mv_intern.png" alt="" width="1920" height="1080">
         </figure>
         <div class="p-page-mv__text-wrapper">
-          <p class="p-page-mv__text">現場の空気、人のあたたかさ、責任感とやりがい。<br>
-            フクダのインターンシップは、ただ“見る”だけじゃありません。<br>
-            実際の仕事や社員との交流を通じて、建設という仕事の「本当の手応え」を体感できます。<br>
+          <p class="p-page-mv__text">現場の空気、人のあたたかさ、<br class="u-mobile">責任感とやりがい。<br>
+            フクダのインターンシップは、<br class="u-mobile">ただ“見る”だけじゃありません。<br>
+            実際の仕事や社員との交流を通じて、<br class="u-mobile">建設という仕事の<br class="u-mobile">「本当の手応え」を体感できます。<br>
             技術や知識はこれからでいい。<br>
             大切なのは、「やってみたい」と思えること。<br>
-            未来の自分と、仲間と、働く意味を見つけに来てください。</p>
+            未来の自分と、仲間と、<br class="u-mobile">働く意味を見つけに来てください。</p>
         </div>
       </div>
     </div>

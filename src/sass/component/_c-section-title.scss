@@ -4,21 +4,29 @@
 }
 
 .c-section-title__en {
-  font-size: rem(110);
   font-family: $lato-italic;
   font-weight: 900;
   color: #242424;
   font-style: italic;
   display: block;
+  font-size: rem(40);
+  @include mq(md) {
+    font-size: rem(110);
+  }
 }
 
 .c-section-title__ja {
   color: #242424;
   display: block;
-  font-size: rem(30);
   font-weight: 900;
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(30);
+  }
 }
 .c-section-title__ja--small {
-  font-size: rem(20);
+  font-size: rem(14);
+  @include mq(md) {
+    font-size: rem(20);
+  }
 }
-  

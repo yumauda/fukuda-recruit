@@ -21,34 +21,45 @@
 }
 
 .p-interview__content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   max-width: rem(1200);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: rem(-88);
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: rem(-88);
+  }
 }
 
 .p-interview__detail {
-  margin-right: rem(-56);
-  margin-top: rem(120);
+  @include mq(md) {
+    margin-right: rem(-56);
+    margin-top: rem(120);
+  }
 }
 
 .p-interview__title {
-  font-size: rem(90);
   font-weight: 900;
   color: #fff;
   line-height: calc(120 / 90);
+  font-size: rem(32);
+  @include mq(md) {
+    font-size: rem(90);
+  }
 }
 
 .p-interview__en {
   font-family: $lato-italic;
-  font-size: rem(30);
   font-weight: 700;
   color: #fff;
-  margin-top: rem(30);
+  font-size: rem(16);
+  margin-top: rem(20);
+  @include mq(md) {
+    font-size: rem(30);
+    margin-top: rem(30);
+  }
 }
 
 .p-interview__occupation {
@@ -59,9 +70,13 @@
 }
 
 .p-interview__img {
-  max-width: rem(618);
+  margin-top: rem(24);
   width: 100%;
-  margin-right: rem(-131);
+  @include mq(md) {
+    margin-top: initial;
+    max-width: rem(618);
+    margin-right: rem(-131);
+  }
 }
 .p-interview__img img {
   width: 100%;
