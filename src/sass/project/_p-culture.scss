@@ -1,8 +1,11 @@
 @use "global" as *;
 
 .p-culture {
-  padding-bottom: rem(88);
   position: relative;
+  padding-bottom: rem(40);
+  @include mq(md) {
+    padding-bottom: rem(88);
+  }
 }
 .p-culture::before {
   position: absolute;
@@ -32,23 +35,39 @@
 }
 
 .p-culture__text {
-  font-size: rem(18);
   letter-spacing: 0.05em;
   color: #242424;
   font-weight: 400;
   line-height: calc(34 / 18);
-  margin-top: rem(40);
+  font-size: rem(14);
+  margin-top: rem(24);
+  @include mq(md) {
+    font-size: rem(18);
+    margin-top: rem(40);
+  }
 }
 
 .p-culture__lists {
-  display: flex;
-  gap: rem(10);
+  margin-top: rem(10);
+  @include mq(md) {
+    display: flex;
+    gap: rem(10);
+    margin-top: initial;
+  }
 }
 .p-culture__lists-top {
-  align-items: flex-end;
-  margin-top: rem(-240);
+  @include mq(md) {
+    align-items: flex-end;
+    margin-top: rem(-240);
+  }
 }
 .p-culture__list {
+}
+.p-culture__list + .p-culture__list {
+  margin-top: rem(10);
+  @include mq(md) {
+    margin-top: initial;
+  }
 }
 
 .p-culture__list-1 {
@@ -68,12 +87,17 @@
 }
 
 .p-culture__list-2 {
-  max-width: rem(420);
   width: 100%;
+  @include mq(md) {
+    max-width: rem(420);
+  }
 }
 .p-culture__lists-bottom {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: rem(10);
   margin-top: rem(10);
+  @include mq(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

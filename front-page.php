@@ -9,12 +9,12 @@
     <div class="l-inner">
       <div class="p-do__content">
         <div class="p-do__text-wrapper">
-          <p class="p-do__text">「できるかどうか」より、「やってみたいかどうか」。<br>
-            誠実で、ていねいで、自分の役割を果たせる人こそ、<br>
+          <p class="p-do__text">「できるかどうか」より、<br class="u-mobile">「やってみたいかどうか」。<br>
+            誠実で、ていねいで、<br class="u-mobile">自分の役割を果たせる人こそ、<br>
             この町を支える本当の力になれる。<br>
-            特別じゃなくていい。まっすぐなあなたがいい。<br>
+            特別じゃなくていい。<br class="u-mobile">まっすぐなあなたがいい。<br>
             “今のあなた”を信じて踏み出せば、<br>
-            ここには一緒に育っていく場所が、仲間がある。</p>
+            ここには一緒に<br class="u-mobile">育っていく場所が、仲間がある。</p>
         </div>
         <figure class="p-do__img">
           <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/do_img.png" alt="やってみたいかどうか" width="1920" height="1349">

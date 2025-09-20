@@ -1,10 +1,13 @@
 @use "global" as *;
 
 .p-do {
-  padding-top: rem(210);
   position: relative;
   overflow-x: clip;
   z-index: 1;
+  padding-top: rem(50);
+  @include mq(md) {
+    padding-top: rem(210);
+  }
 }
 .p-do::before {
   position: absolute;
@@ -13,14 +16,16 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(1506);
   height: auto;
-  top: rem(-48);
   left: rem(-1400);
   aspect-ratio: 1506 / 470;
   object-fit: cover;
   width: 100%;
   height: auto;
+  @include mq(md) {
+    width: rem(1506);
+    top: rem(-48);
+  }
 }
 .p-do__content {
   position: relative;
@@ -32,13 +37,18 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(1137);
+  width: 100%;
   height: auto;
   aspect-ratio: 1137 / 770;
   object-fit: cover;
-  top: rem(-240);
-  right: rem(-600);
   z-index: -1;
+  top: rem(-40);
+  right: rem(-240);
+  @include mq(md) {
+    top: rem(-240);
+    right: rem(-600);
+    width: rem(1137);
+  }
 }
 
 .p-do__text-wrapper {
@@ -48,15 +58,22 @@
 
 .p-do__text {
   font-weight: 700;
-  font-size: rem(26);
-  line-height: calc(90 / 26);
   color: #242424;
+  line-height: 2;
+  font-size: rem(18);
+  @include mq(md) {
+    line-height: calc(90 / 26);
+    font-size: rem(26);
+  }
 }
 .p-do__img {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   width: 100vw;
-  margin-top: rem(-200);
+  margin-top: rem(32);
+  @include mq(md) {
+    margin-top: rem(-200);
+  }
 }
 
 .p-do__img img {

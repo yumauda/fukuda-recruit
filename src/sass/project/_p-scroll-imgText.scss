@@ -4,8 +4,12 @@
 .p-scroll-imgText {
   display: flex; /* スライドのグループを横並び */
   overflow: hidden; /* はみ出たスライドを隠す */
-  margin-top: rem(127);
+  margin-top: rem(56);
+  @include mq(md) {
+    margin-top: rem(127);
+  }
 }
+
 /* スライド3枚のグループ */
 .p-scroll-imgText__slider {
   animation: scroll-left 40s infinite linear 0.5s both;
@@ -13,7 +17,10 @@
 }
 /* スライド */
 .p-scroll-imgText__slide {
-  width: calc(100vw / 0.7); /* 3はスライドの枚数 */
+  width: calc(100vw / 0.4); /* 3はスライドの枚数 */
+  @include mq(md) {
+    width: calc(100vw / 0.7); /* 3はスライドの枚数 */
+  }
 }
 /* スライドの画像 */
 .p-scroll-imgText__slide img {
