@@ -1,10 +1,13 @@
 @use "global" as *;
 
 .p-pass {
-  padding-top: rem(160);
-  padding-bottom: rem(325);
   position: relative;
   z-index: 1;
+  padding-top: rem(80);
+  @include mq(md) {
+    padding-top: rem(160);
+    padding-bottom: rem(325);
+  }
 }
 
 .p-pass__content {
@@ -19,5 +22,8 @@
 }
 
 .p-pass__qa {
-  margin-top: rem(248);
+  margin-top: rem(120);
+  @include mq(md) {
+    margin-top: rem(248);
+  }
 }

@@ -3184,12 +3184,16 @@ input::placeholder {
 }
 
 .p-pass {
-  padding-top: 160px;
-  padding-top: 10rem;
-  padding-bottom: 325px;
-  padding-bottom: 20.3125rem;
   position: relative;
   z-index: 1;
+  padding-top: 80px;
+  padding-top: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-pass {
+    padding-top: 10rem;
+    padding-bottom: 20.3125rem;
+  }
 }
 
 .p-pass__content {
@@ -3205,8 +3209,13 @@ input::placeholder {
 }
 
 .p-pass__qa {
-  margin-top: 248px;
-  margin-top: 15.5rem;
+  margin-top: 120px;
+  margin-top: 7.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-pass__qa {
+    margin-top: 15.5rem;
+  }
 }
 
 .p-program {
@@ -3497,16 +3506,23 @@ input::placeholder {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 320px;
-  width: 20rem;
   height: auto;
   aspect-ratio: 320/402;
   -o-object-fit: cover;
      object-fit: cover;
-  top: -402px;
-  top: -25.125rem;
-  left: -320px;
-  left: -20rem;
+  left: -40px;
+  left: -2.5rem;
+  top: -200px;
+  top: -12.5rem;
+  width: 100px;
+  width: 6.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-qa__block--1::before {
+    width: 20rem;
+    top: -25.125rem;
+    left: -20rem;
+  }
 }
 
 .p-qa__block--1::after {
@@ -3516,17 +3532,24 @@ input::placeholder {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 1265px;
-  width: 79.0625rem;
   height: auto;
   aspect-ratio: 1265/633;
   -o-object-fit: cover;
      object-fit: cover;
-  top: -100px;
-  top: -6.25rem;
-  left: -320px;
-  left: -20rem;
   z-index: -1;
+  top: -110px;
+  top: -6.875rem;
+  width: 800px;
+  width: 50rem;
+  left: -300px;
+  left: -18.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-qa__block--1::after {
+    width: 79.0625rem;
+    top: -6.25rem;
+    left: -20rem;
+  }
 }
 
 .p-qa__block--2::before {
@@ -3536,16 +3559,23 @@ input::placeholder {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 320px;
-  width: 20rem;
   height: auto;
   aspect-ratio: 320/404;
   -o-object-fit: cover;
      object-fit: cover;
-  top: -402px;
-  top: -25.125rem;
-  right: -320px;
-  right: -20rem;
+  right: -40px;
+  right: -2.5rem;
+  top: -200px;
+  top: -12.5rem;
+  width: 100px;
+  width: 6.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-qa__block--2::before {
+    width: 20rem;
+    top: -25.125rem;
+    right: -20rem;
+  }
 }
 
 .p-qa__block--2::after {
@@ -3555,17 +3585,24 @@ input::placeholder {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 945px;
-  width: 59.0625rem;
   height: auto;
   aspect-ratio: 945/823;
   -o-object-fit: cover;
      object-fit: cover;
-  top: -100px;
-  top: -6.25rem;
-  right: -16px;
-  right: -1rem;
   z-index: -1;
+  top: -110px;
+  top: -6.875rem;
+  width: 600px;
+  width: 37.5rem;
+  right: -80px;
+  right: -5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-qa__block--2::after {
+    width: 59.0625rem;
+    top: -6.25rem;
+    right: -1rem;
+  }
 }
 
 .p-qa__block--3::before {
@@ -3575,16 +3612,23 @@ input::placeholder {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 320px;
-  width: 20rem;
   height: auto;
   aspect-ratio: 320/407;
   -o-object-fit: cover;
      object-fit: cover;
-  top: -402px;
-  top: -25.125rem;
-  left: -320px;
-  left: -20rem;
+  left: -40px;
+  left: -2.5rem;
+  top: -200px;
+  top: -12.5rem;
+  width: 100px;
+  width: 6.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-qa__block--3::before {
+    width: 20rem;
+    top: -25.125rem;
+    left: -20rem;
+  }
 }
 
 .p-qa__block--3::after {
@@ -3594,17 +3638,24 @@ input::placeholder {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 945px;
-  width: 59.0625rem;
   height: auto;
   aspect-ratio: 945/873;
   -o-object-fit: cover;
      object-fit: cover;
-  top: -100px;
-  top: -6.25rem;
-  left: 0px;
-  left: 0rem;
   z-index: -1;
+  top: -110px;
+  top: -6.875rem;
+  width: 600px;
+  width: 37.5rem;
+  left: -100px;
+  left: -6.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-qa__block--3::after {
+    width: 59.0625rem;
+    top: -6.25rem;
+    left: 0rem;
+  }
 }
 
 .p-qa__block--4::before {
@@ -3614,16 +3665,23 @@ input::placeholder {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 320px;
-  width: 20rem;
   height: auto;
   aspect-ratio: 320/407;
   -o-object-fit: cover;
      object-fit: cover;
-  top: -402px;
-  top: -25.125rem;
-  right: -320px;
-  right: -20rem;
+  right: -40px;
+  right: -2.5rem;
+  top: -200px;
+  top: -12.5rem;
+  width: 100px;
+  width: 6.25rem;
+}
+@media screen and (min-width: 768px) {
+  .p-qa__block--4::before {
+    width: 20rem;
+    top: -25.125rem;
+    right: -20rem;
+  }
 }
 
 .p-qa__block--4::after {
@@ -3633,28 +3691,41 @@ input::placeholder {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: 945px;
-  width: 59.0625rem;
   height: auto;
   aspect-ratio: 945/1251;
   -o-object-fit: cover;
      object-fit: cover;
-  top: -100px;
-  top: -6.25rem;
-  right: 0px;
-  right: 0rem;
   z-index: -1;
+  top: -110px;
+  top: -6.875rem;
+  width: 600px;
+  width: 37.5rem;
+  left: -200px;
+  left: -12.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-qa__block--4::after {
+    width: 59.0625rem;
+    right: 0rem;
+    top: -6.25rem;
+  }
 }
 
 .p-qa__summary {
   color: #fff;
   cursor: pointer;
   position: relative;
-  padding-top: 23px;
-  padding-top: 1.4375rem;
-  padding-bottom: 23px;
-  padding-bottom: 1.4375rem;
   list-style: none;
+  padding-top: 16px;
+  padding-top: 1rem;
+  padding-bottom: 16px;
+  padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-qa__summary {
+    padding-top: 1.4375rem;
+    padding-bottom: 1.4375rem;
+  }
 }
 
 .p-qa__line {
@@ -3712,8 +3783,8 @@ input::placeholder {
 }
 
 .p-qa__ttl {
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   position: relative;
   color: #242424;
@@ -3749,12 +3820,17 @@ input::placeholder {
 }
 
 .p-qa__txt {
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 2;
   color: #242424;
   letter-spacing: 0.05em;
   position: relative;
+}
+@media screen and (min-width: 768px) {
+  .p-qa__txt {
+    font-size: 1rem;
+  }
 }
 
 .p-qa__dl {
@@ -3763,14 +3839,20 @@ input::placeholder {
 }
 
 .p-qa__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   border-top: 1px dotted #cccccc;
-  padding-top: 20px;
-  padding-top: 1.25rem;
-  padding-bottom: 20px;
-  padding-bottom: 1.25rem;
+  padding-top: 12px;
+  padding-top: 0.75rem;
+  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-qa__row {
+    padding-bottom: 1.25rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 1.25rem;
+  }
 }
 
 .p-qa__row:last-child {
@@ -3789,6 +3871,17 @@ input::placeholder {
   font-weight: 700;
   color: #242424;
   letter-spacing: 0.05em;
+}
+
+.p-qa__dd {
+  margin-top: 12px;
+  margin-top: 0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .p-qa__dd {
+    margin-top: 0;
+    margin-top: initial;
+  }
 }
 
 .p-qa__dd-text {
@@ -4821,6 +4914,11 @@ input::placeholder {
 /* グループ（グループ化ブロック） */
 /* カラム系 */
 /* ギャラリー */
+.p-submit {
+  position: relative;
+  z-index: 1;
+}
+
 .p-submit__inner {
   padding-left: 20px;
   padding-left: 1.25rem;

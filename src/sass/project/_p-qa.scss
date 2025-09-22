@@ -27,12 +27,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(320);
   height: auto;
   aspect-ratio: 320 / 402;
   object-fit: cover;
-  top: rem(-402);
-  left: rem(-320);
+  left: rem(-40);
+  top: rem(-200);
+  width: rem(100);
+  @include mq(md) {
+    width: rem(320);
+    top: rem(-402);
+    left: rem(-320);
+  }
 }
 .p-qa__block--1::after {
   position: absolute;
@@ -41,13 +46,18 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(1265);
   height: auto;
   aspect-ratio: 1265 / 633;
   object-fit: cover;
-  top: rem(-100);
-  left: rem(-320);
   z-index: -1;
+  top: rem(-110);
+  width: rem(800);
+  left: rem(-300);
+  @include mq(md) {
+    width: rem(1265);
+    top: rem(-100);
+    left: rem(-320);
+  }
 }
 .p-qa__block--2::before {
   position: absolute;
@@ -56,12 +66,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(320);
   height: auto;
   aspect-ratio: 320 / 404;
   object-fit: cover;
-  top: rem(-402);
-  right: rem(-320);
+  right: rem(-40);
+  top: rem(-200);
+  width: rem(100);
+  @include mq(md) {
+    width: rem(320);
+    top: rem(-402);
+    right: rem(-320);
+  }
 }
 .p-qa__block--2::after {
   position: absolute;
@@ -70,13 +85,18 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(945);
   height: auto;
   aspect-ratio: 945 / 823;
   object-fit: cover;
-  top: rem(-100);
-  right: rem(-16);
   z-index: -1;
+  top: rem(-110);
+  width: rem(600);
+  right: rem(-80);
+  @include mq(md) {
+    width: rem(945);
+    top: rem(-100);
+    right: rem(-16);
+  }
 }
 .p-qa__block--3::before {
   position: absolute;
@@ -85,12 +105,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(320);
   height: auto;
   aspect-ratio: 320 / 407;
   object-fit: cover;
-  top: rem(-402);
-  left: rem(-320);
+  left: rem(-40);
+  top: rem(-200);
+  width: rem(100);
+  @include mq(md) {
+    width: rem(320);
+    top: rem(-402);
+    left: rem(-320);
+  }
 }
 .p-qa__block--3::after {
   position: absolute;
@@ -99,13 +124,18 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(945);
   height: auto;
   aspect-ratio: 945 / 873;
   object-fit: cover;
-  top: rem(-100);
-  left: rem(-0);
   z-index: -1;
+  top: rem(-110);
+  width: rem(600);
+  left: rem(-100);
+  @include mq(md) {
+    width: rem(945);
+    top: rem(-100);
+    left: rem(-0);
+  }
 }
 .p-qa__block--4::before {
   position: absolute;
@@ -114,12 +144,17 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(320);
   height: auto;
   aspect-ratio: 320 / 407;
   object-fit: cover;
-  top: rem(-402);
-  right: rem(-320);
+  right: rem(-40);
+  top: rem(-200);
+  width: rem(100);
+  @include mq(md) {
+    width: rem(320);
+    top: rem(-402);
+    right: rem(-320);
+  }
 }
 .p-qa__block--4::after {
   position: absolute;
@@ -128,21 +163,31 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  width: rem(945);
   height: auto;
   aspect-ratio: 945 / 1251;
   object-fit: cover;
-  top: rem(-100);
-  right: rem(-0);
   z-index: -1;
+  top: rem(-110);
+  width: rem(600);
+  left: rem(-200);
+  @include mq(md) {
+    width: rem(945);
+
+    right: rem(-0);
+    top: rem(-100);
+  }
 }
 .p-qa__summary {
   color: #fff;
   cursor: pointer;
   position: relative;
-  padding-top: rem(23);
-  padding-bottom: rem(23);
   list-style: none;
+  padding-top: rem(16);
+  padding-bottom: rem(16);
+  @include mq(md) {
+    padding-top: rem(23);
+    padding-bottom: rem(23);
+  }
 }
 .p-qa__line {
   border-top: 1px solid #cccccc;
@@ -183,7 +228,7 @@
   }
 }
 .p-qa__ttl {
-  font-size: rem(16);
+  font-size: rem(14);
   font-weight: 500;
   position: relative;
   color: #242424;
@@ -210,21 +255,28 @@
   padding-bottom: rem(18);
 }
 .p-qa__txt {
-  font-size: rem(16);
+  font-size: rem(14);
   line-height: calc(32 / 16);
   color: #242424;
   letter-spacing: 0.05em;
   position: relative;
+  @include mq(md) {
+    font-size: rem(16);
+  }
 }
 .p-qa__dl {
   margin-top: rem(20);
 }
 
 .p-qa__row {
-  display: flex;
   border-top: 1px dotted #cccccc;
-  padding-top: rem(20);
-  padding-bottom: rem(20);
+  padding-top: rem(12);
+  padding-bottom: rem(12);
+  @include mq(md) {
+    padding-bottom: rem(20);
+    display: flex;
+    padding-top: rem(20);
+  }
 }
 .p-qa__row:last-child {
   border-bottom: 1px dotted #cccccc;
@@ -244,6 +296,10 @@
 }
 
 .p-qa__dd {
+  margin-top: rem(12);
+  @include mq(md) {
+    margin-top: initial;
+  }
 }
 
 .p-qa__dd-text {

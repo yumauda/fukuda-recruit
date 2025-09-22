@@ -44,7 +44,7 @@
           <?php the_content(); ?>
         </div>
         <div class="p-single-topics__btn-wrapper">
-          <a href="<?php echo esc_url(home_url('/topics')); ?>" class="p-single-topics__btn">
+          <a href="<?php echo esc_url(home_url('/news')); ?>" class="p-single-topics__btn">
             <span class="p-single-topics__icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="24.5" height="49" viewBox="0 0 24.5 49">
                 <path d="M24.5,48.5a24,24,0,0,1,0-48" transform="translate(0 0)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1" />

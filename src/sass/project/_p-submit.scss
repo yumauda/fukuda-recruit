@@ -1,6 +1,8 @@
 @use "global" as *;
 
 .p-submit {
+  position: relative;
+  z-index: 1;
 }
 
 .p-submit__inner {
