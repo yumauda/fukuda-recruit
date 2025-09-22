@@ -44,12 +44,12 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="p-footer__list">
+                    <li class="p-footer__list ml24">
                         <a href="#" class="p-footer__link">数字で見るFUKUDA</a>
                         <a href="#" class="p-footer__link">FUKUDAひと図鑑</a>
                         <a href="#" class="p-footer__link">インターンシップ</a>
                     </li>
-                    <li class="p-footer__list">
+                    <li class="p-footer__list mt24">
                         <a href="#" class="p-footer__link">お知らせ</a>
                         <a href="#" class="p-footer__link">コーポレートサイト</a>
                     </li>

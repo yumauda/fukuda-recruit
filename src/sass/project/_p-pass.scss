@@ -3,6 +3,7 @@
 .p-pass {
   position: relative;
   z-index: 1;
+  overflow-x: clip;
   padding-top: rem(80);
   @include mq(md) {
     padding-top: rem(160);

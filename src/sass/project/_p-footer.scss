@@ -148,9 +148,11 @@
 
 .p-footer__lists {
   margin-top: rem(24);
+  display: flex;
+  flex-wrap: wrap;
   @include mq(md) {
+    flex-wrap: nowrap;
     margin-top: initial;
-    display: flex;
     gap: rem(90);
   }
 }
@@ -158,7 +160,18 @@
 .p-footer__list {
 }
 .p-footer__list + .p-footer__list {
-  margin-top: rem(16);
+  @include mq(md) {
+    margin-top: initial;
+  }
+}
+.ml24 {
+  margin-left: rem(24);
+  @include mq(md) {
+    margin-left: initial;
+  }
+}
+.mt24 {
+  margin-top: rem(24);
   @include mq(md) {
     margin-top: initial;
   }
