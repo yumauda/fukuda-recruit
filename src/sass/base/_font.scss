@@ -14,6 +14,13 @@
   font-style: italic;
   font-display: swap;
 }
+@font-face {
+  font-family: $poppins-italic;
+  src: url("../../fonts/Poppins-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
 
 /* @font-face {
   font-family: $base-font-family-bold;

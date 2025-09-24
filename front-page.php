@@ -36,25 +36,49 @@
         </div>
         <ul class="p-culture__lists p-culture__lists-top">
           <li class="p-culture__list p-culture__list-1">
-            <a href="#" class="p-culture__link">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/culture_btn1.png" alt="福利厚生" width="770" height="380">
+            <a href="<?php echo home_url('/culture#welfare'); ?>" class="p-culture__link">
+              <p class="p-culture__link-text">01</p>
+              <figure class="p-culture__link-img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/culture_btn1.png" alt="福利厚生" width="770" height="380">
+              </figure>
+              <div class="p-culture__link-icon">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/culture_icon.png" alt="" width="30" height="30">
+              </div>
             </a>
           </li>
           <li class="p-culture__list p-culture__list-2">
-            <a href="#" class="p-culture__link">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/culture_btn2.png" alt="環境づくり" width="420" height="680">
+            <a href="<?php echo home_url('/culture#environment'); ?>" class="p-culture__link">
+              <p class="p-culture__link-text">02</p>
+              <figure class="p-culture__link-img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/culture_btn2.png" alt="環境づくり" width="420" height="680">
+              </figure>
+              <div class="p-culture__link-icon">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/culture_icon.png" alt="" width="30" height="30">
+              </div>
             </a>
           </li>
         </ul>
         <ul class="p-culture__lists p-culture__lists-bottom">
           <li class="p-culture__list">
-            <a href="#" class="p-culture__link">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/culture_btn3.png" alt="育成・キャリア" width="770" height="380">
+            <a href="<?php echo home_url('/career'); ?>" class="p-culture__link">
+              <p class="p-culture__link-text">03</p>
+              <figure class="p-culture__link-img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/culture_btn3.png" alt="育成・キャリア" width="770" height="380">
+              </figure>
+              <div class="p-culture__link-icon">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/culture_icon.png" alt="" width="30" height="30">
+              </div>
             </a>
           </li>
           <li class="p-culture__list">
-            <a href="#" class="p-culture__link">
-              <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/culture_btn4.png" alt="数字で見る" width="420" height="680">
+            <a href="<?php echo home_url('/infographics'); ?>" class="p-culture__link">
+              <p class="p-culture__link-text p-culture__link-text--black">04</p>
+              <figure class="p-culture__link-img">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/culture_btn4.png" alt="数字で見る" width="420" height="680">
+              </figure>
+              <div class="p-culture__link-icon">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/culture_icon_black.png" alt="" width="30" height="30">
+              </div>
             </a>
           </li>
         </ul>
@@ -108,7 +132,7 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <div class="p-top-people__item">
+                <a href="<?php echo home_url('/interview01'); ?>" class="p-top-people__item">
                   <figure class="p-top-people__img w509">
                     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_1.png" alt="" width="499" height="574">
                   </figure>
@@ -117,10 +141,10 @@
                     <p class="p-top-people__en">KENSUKE.Y</p>
                     <p class="p-top-people__occupation">営業</p>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="swiper-slide">
-                <div class="p-top-people__item">
+                <a href="<?php echo home_url('/interview02'); ?>" class="p-top-people__item">
                   <figure class="p-top-people__img w628">
                     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_2.png" alt="" width="499" height="574">
                   </figure>
@@ -129,10 +153,10 @@
                     <p class="p-top-people__en">KANAU.M</p>
                     <p class="p-top-people__occupation">軌道班</p>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="swiper-slide">
-                <div class="p-top-people__item">
+                <a href="<?php echo home_url('/interview04'); ?>" class="p-top-people__item">
                   <figure class="p-top-people__img w462">
                     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_3.png" alt="" width="499" height="574">
                   </figure>
@@ -141,10 +165,10 @@
                     <p class="p-top-people__en">TAYUTO.K</p>
                     <p class="p-top-people__occupation">土木</p>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="swiper-slide">
-                <div class="p-top-people__item">
+                <a href="<?php echo home_url('/interview06'); ?>" class="p-top-people__item">
                   <figure class="p-top-people__img w532">
                     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_4.png" alt="" width="499" height="574">
                   </figure>
@@ -153,10 +177,10 @@
                     <p class="p-top-people__en">JYO.M</p>
                     <p class="p-top-people__occupation">土木</p>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="swiper-slide">
-                <div class="p-top-people__item">
+                <a href="<?php echo home_url('/interview05'); ?>" class="p-top-people__item">
                   <figure class="p-top-people__img w470">
                     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_5.png" alt="" width="499" height="574">
                   </figure>
@@ -165,10 +189,10 @@
                     <p class="p-top-people__en">KYOTA.I</p>
                     <p class="p-top-people__occupation">建築</p>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="swiper-slide">
-                <div class="p-top-people__item">
+                <a href="<?php echo home_url('/interview03'); ?>" class="p-top-people__item">
                   <figure class="p-top-people__img w429">
                     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_6.png" alt="" width="499" height="574">
                   </figure>
@@ -177,7 +201,7 @@
                     <p class="p-top-people__en">REMI.A</p>
                     <p class="p-top-people__occupation">総務</p>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>

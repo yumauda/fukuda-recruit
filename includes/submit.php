@@ -6,7 +6,7 @@
 <div class="p-submit">
     <div class="p-submit__inner">
         <div class="p-submit__btn-wrapper">
-            <a href="#" class="p-submit__btn">
+            <a href="<?php echo esc_url(home_url('/intern')); ?>" class="p-submit__btn">
                 <div class="p-submit__btn-detail">
                     <p class="p-submit__btn-title">INTERNSHIP</p>
                     <p class="p-submit__btn-text">“なんとなく興味ある”でOK！<br>フクダはあなたの「第一歩」を応援します。</p>

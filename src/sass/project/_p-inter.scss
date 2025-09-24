@@ -6,7 +6,7 @@
   padding-bottom: rem(56);
   @include mq(md) {
     padding-top: rem(150);
-    padding-bottom: rem(150);
+    padding-bottom: initial;
   }
 }
 .p-inter::before {

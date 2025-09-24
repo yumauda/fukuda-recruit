@@ -28,30 +28,30 @@
             <div class="p-footer__right">
                 <ul class="p-footer__lists">
                     <li class="p-footer__list">
-                        <a href="#" class="p-footer__link">フクダの働き方</a>
+                        <a href="<?php echo esc_url(home_url('/culture')); ?>" class="p-footer__link">フクダの働き方</a>
                         <ul class="p-footer__small-lists">
                             <li class="p-footer__small-list">
                                 <a href="#" class="p-footer__small-link">各種制度</a>
                             </li>
                             <li class="p-footer__small-list">
-                                <a href="#" class="p-footer__small-link">福利厚生</a>
+                                <a href="<?php echo esc_url(home_url('/culture#welfare')); ?>" class="p-footer__small-link">福利厚生</a>
                             </li>
                             <li class="p-footer__small-list">
-                                <a href="#" class="p-footer__small-link">環境づくり</a>
+                                <a href="<?php echo esc_url(home_url('/culture#environment')); ?>" class="p-footer__small-link">環境づくり</a>
                             </li>
                             <li class="p-footer__small-list">
-                                <a href="#" class="p-footer__small-link">育成・キャリア</a>
+                                <a href="<?php echo esc_url(home_url('/career')); ?>" class="p-footer__small-link">育成・キャリア</a>
                             </li>
                         </ul>
                     </li>
                     <li class="p-footer__list ml24">
-                        <a href="#" class="p-footer__link">数字で見るFUKUDA</a>
+                        <a href="<?php echo esc_url(home_url('/infographics')); ?>" class="p-footer__link">数字で見るFUKUDA</a>
                         <a href="#" class="p-footer__link">FUKUDAひと図鑑</a>
-                        <a href="#" class="p-footer__link">インターンシップ</a>
+                        <a href="<?php echo esc_url(home_url('/intern')); ?>" class="p-footer__link">インターンシップ</a>
                     </li>
                     <li class="p-footer__list mt24">
                         <a href="#" class="p-footer__link">お知らせ</a>
-                        <a href="#" class="p-footer__link">コーポレートサイト</a>
+                        <a href="https://fukuda.first-step-yuma.com/" class="p-footer__link" target="_blank" rel="noopener noreferrer">コーポレートサイト</a>
                     </li>
                 </ul>
             </div>

@@ -78,8 +78,39 @@
 .p-culture__link {
   display: block;
   filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.1));
+  position: relative;
 }
-.p-culture__link img {
+.p-culture__link-text {
+  position: absolute;
+  font-weight: 700;
+  color: #fff;
+  font-family: $poppins-italic;
+  font-style: italic;
+  font-size: rem(28);
+  top: rem(20);
+  left: rem(20);
+  @include mq(md) {
+    top: rem(30);
+    font-size: rem(40);
+    left: rem(30);
+  }
+}
+.p-culture__link-text--black {
+  color: #242424;
+}
+.p-culture__link-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+.p-culture__link-icon {
+  position: absolute;
+  width: rem(30);
+  bottom: rem(30);
+  right: rem(30);
+}
+.p-culture__link-icon img {
   width: 100%;
   height: auto;
   object-fit: cover;

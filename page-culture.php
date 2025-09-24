@@ -66,7 +66,7 @@
       </li>
     </ul>
   </div>
-  <section class="p-row">
+  <section class="p-row" id="welfare">
     <div class="l-inner">
       <div class="p-row__content">
         <h3 class="p-row__title-wrapper">
@@ -150,7 +150,7 @@
       </div>
     </div>
   </section>
-  <section class="p-row p-row--second">
+  <section class="p-row p-row--second" id="environment">
     <div class="l-inner">
       <div class="p-row__content p-row__content--second">
         <h3 class="p-row__title-wrapper">
