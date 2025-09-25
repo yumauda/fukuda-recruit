@@ -2637,16 +2637,11 @@ input::placeholder {
 
 .p-info__row {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
   gap: 10px;
   gap: 0.625rem;
   margin-top: 10px;
   margin-top: 0.625rem;
-}
-@media screen and (min-width: 768px) {
-  .p-info__row {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .p-info__row-box {

@@ -72,12 +72,9 @@
 }
 .p-info__row {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
   gap: rem(10);
   margin-top: rem(10);
-  @include mq(md) {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .p-info__row-box {
