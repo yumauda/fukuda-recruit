@@ -30,7 +30,6 @@
 .p-top-people__content {
 }
 .p-top-people__main {
-  
 }
 
 .p-top-people__top-title {
@@ -163,10 +162,7 @@
   max-width: rem(509);
   width: 100%;
 }
-.w628 {
-  max-width: rem(628);
-  width: 100%;
-}
+
 .w462 {
   max-width: rem(462);
   width: 100%;
@@ -180,14 +176,25 @@
   width: 100%;
 }
  */
+
 .w429 {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   @include mq(md) {
-    max-width: rem(300);
+    max-width: rem(350);
   }
   @include mq(lg) {
     max-width: rem(429);
+  }
+}
+.p-top-people__detail--2 {
+  @include mq(md) {
+    bottom: rem(-140);
+  }
+}
+.p-top-people__detail--4 {
+  @include mq(md) {
+    bottom: rem(-32);
   }
 }

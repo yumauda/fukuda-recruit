@@ -5552,10 +5552,7 @@ input::placeholder {
   max-width: rem(509);
   width: 100%;
 }
-.w628 {
-  max-width: rem(628);
-  width: 100%;
-}
+
 .w462 {
   max-width: rem(462);
   width: 100%;
@@ -5576,12 +5573,24 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .w429 {
-    max-width: 18.75rem;
+    max-width: 21.875rem;
   }
 }
 @media screen and (min-width: 1540px) {
   .w429 {
     max-width: 26.8125rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-top-people__detail--2 {
+    bottom: -8.75rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .p-top-people__detail--4 {
+    bottom: -2rem;
   }
 }
 

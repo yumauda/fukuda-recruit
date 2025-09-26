@@ -145,10 +145,10 @@
               </div>
               <div class="swiper-slide">
                 <a href="<?php echo home_url('/interview02'); ?>" class="p-top-people__item">
-                  <figure class="p-top-people__img w628">
+                  <figure class="p-top-people__img w764">
                     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_2.png" alt="" width="499" height="574">
                   </figure>
-                  <div class="p-top-people__detail p-top-people__detail--right">
+                  <div class="p-top-people__detail p-top-people__detail--right p-top-people__detail--2">
                     <h3 class="p-top-people__title">体力と責任感を<br>鍛えるヒト</h3>
                     <p class="p-top-people__en">KANAU.M</p>
                     <p class="p-top-people__occupation">軌道班</p>
@@ -172,7 +172,7 @@
                   <figure class="p-top-people__img w532">
                     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_4.png" alt="" width="499" height="574">
                   </figure>
-                  <div class="p-top-people__detail p-top-people__detail--right">
+                  <div class="p-top-people__detail p-top-people__detail--right p-top-people__detail--4">
                     <h3 class="p-top-people__title">効率と工夫で<br>成果を出すヒト</h3>
                     <p class="p-top-people__en">JYO.M</p>
                     <p class="p-top-people__occupation">土木</p>
