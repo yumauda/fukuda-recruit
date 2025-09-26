@@ -16,7 +16,7 @@
                         <a href="#" class="p-footer__facebook">
                             <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/facebook.png" alt="" width="19" height="30">
                         </a>
-                        <a href="#" class="p-footer__instagram">
+                        <a href="https://www.instagram.com/fukuda.corp/" class="p-footer__instagram" target="_blank" rel="noopener">
                             <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/instagram.png" alt="" width="28" height="32">
                         </a>
                     </div>
@@ -50,7 +50,7 @@
                         <a href="<?php echo esc_url(home_url('/intern')); ?>" class="p-footer__link">インターンシップ</a>
                     </li>
                     <li class="p-footer__list mt24">
-                        <a href="#" class="p-footer__link">お知らせ</a>
+                        <a href="https://fukuda.first-step-yuma.com/news/" class="p-footer__link" target="_blank" rel="noopener noreferrer">お知らせ</a>
                         <a href="https://fukuda.first-step-yuma.com/" class="p-footer__link" target="_blank" rel="noopener noreferrer">コーポレートサイト</a>
                     </li>
                 </ul>

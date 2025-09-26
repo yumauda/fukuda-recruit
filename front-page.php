@@ -209,7 +209,7 @@
       </div>
     </div>
   </section>
-  <section class="p-top-news">
+  <!-- <section class="p-top-news">
     <div class="l-inner">
 
       <div class="p-top-news__content">
@@ -254,7 +254,44 @@
         </div>
       </div>
     </div>
+  </section> -->
+  <section class="p-top-news">
+    <div class="l-inner">
+      <div class="p-top-news__content">
+        <div class="p-top-news__left">
+          <div class="p-top-news__title-wrapper">
+            <h2 class="p-top-news__title">
+              <span class="p-top-news__title-en">News</span>
+              <span class="p-top-news__title-ja">お知らせ</span>
+            </h2>
+          </div>
+          <div class="p-top-news__btn-wrapper">
+            <a href="<?php echo esc_url(ext_remote_news_archive_url('https://fukuda.first-step-yuma.com/', 'post')); ?>" class="p-top-news__btn" target="_blank" rel="noopener">
+              <p class="p-top-news__btn-text">一覧を見る</p>
+              <div class="p-top-news__btn-icon">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri(); ?>/images/common/top_news_btn_icon.png" alt="一覧を見る" width="431" height="38">
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="p-top-news__right">
+          <?php
+          echo ext_render_remote_news([
+            'base'         => 'https://fukuda.first-step-yuma.com',
+            'per_page'     => 3,
+            'category_slug' => 'news',     // ← ここを使って通常投稿をカテゴリnewsで絞る
+            'basic_user'   => 'test',
+            'basic_pass'   => '0000',
+            'debug'        => 1,          // 確認が終わったら0に戻す
+            // 'sslverify'  => false,     // どうしても取得失敗するときの切り分け用（基本はtrueのまま）
+          ]);
+          ?>
+        </div>
+      </div>
+    </div>
   </section>
+
   <?php get_template_part('includes/submit'); ?>
 
 </main>

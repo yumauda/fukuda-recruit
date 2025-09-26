@@ -429,3 +429,154 @@ add_filter('body_class', function ($classes) {
 
 	return $classes;
 });
+
+
+// ===============================================
+// 先方WP(https://fukuda.first-step-yuma.com)から
+// 通常投稿(posts)をカテゴリslugでフィルタし取得
+// - Basic認証(ベーシック認証)対応：basic_user / basic_pass
+// - カテゴリslug→ID解決に対応：category_slug
+// - debug=1で診断コメント出力
+// ===============================================
+if (!function_exists('ext_render_remote_news')) {
+	function ext_render_remote_news($args = [])
+	{
+		$args = wp_parse_args($args, [
+			'base'         => 'https://fukuda.first-step-yuma.com',
+			'per_page'     => 3,
+			'cache_min'    => 10,
+			'debug'        => 0,
+			// 認証（必要な場合のみ設定）
+			'basic_user'   => '',   // 例: 'foo'
+			'basic_pass'   => '',   // 例: 'bar'
+			// フィルタ
+			'category_slug' => 'news', // ←通常投稿をカテゴリ「news」で絞る
+			// 高度なオプション
+			'sslverify'    => true,  // SSL検証が怪しい環境なら false にして切り分け可（本番は true 推奨）
+		]);
+
+		$headers = ['Accept' => 'application/json'];
+		if ($args['basic_user'] !== '' || $args['basic_pass'] !== '') {
+			$headers['Authorization'] = 'Basic ' . base64_encode($args['basic_user'] . ':' . $args['basic_pass']);
+		}
+
+		$last_error = '';
+		$cat_id     = 0;
+
+		// --- 1) カテゴリslug → ID解決 ---
+		if ($args['category_slug'] !== '') {
+			$cat_endpoint = trailingslashit($args['base']) . 'wp-json/wp/v2/categories';
+			$cat_url = add_query_arg([
+				'slug'     => sanitize_title($args['category_slug']),
+				'per_page' => 1,
+			], $cat_endpoint);
+
+			$cat_res = wp_remote_get($cat_url, [
+				'timeout'   => 10,
+				'headers'   => $headers,
+				'sslverify' => (bool)$args['sslverify'],
+			]);
+
+			if (!is_wp_error($cat_res) && wp_remote_retrieve_response_code($cat_res) === 200) {
+				$cats = json_decode(wp_remote_retrieve_body($cat_res), true);
+				if (is_array($cats) && !empty($cats) && isset($cats[0]['id'])) {
+					$cat_id = (int)$cats[0]['id'];
+				} else {
+					$last_error = 'カテゴリslugの解決に失敗（空配列/不正JSON）';
+				}
+			} else {
+				$last_error = is_wp_error($cat_res) ? 'WP_Error: ' . $cat_res->get_error_message()
+					: 'HTTP ' . wp_remote_retrieve_response_code($cat_res) . ' on ' . $cat_url;
+			}
+		}
+
+		// --- 2) 投稿取得（通常投稿は "posts" エンドポイント） ---
+		$posts_endpoint = trailingslashit($args['base']) . 'wp-json/wp/v2/posts';
+		$query = [
+			'per_page' => (int)$args['per_page'],
+			'orderby'  => 'date',
+			'order'    => 'desc',
+			'_embed'   => 0,
+		];
+		if ($cat_id > 0) {
+			$query['categories'] = $cat_id; // IDで絞り込み
+		}
+
+		$posts_url = add_query_arg($query, $posts_endpoint);
+
+		// キャッシュ
+		$cache_key = 'ext_remote_news_bauth_' . md5(json_encode([
+			$args['base'],
+			$args['per_page'],
+			$cat_id,
+			(bool)$args['sslverify'],
+			(bool)$args['basic_user']
+		]));
+		$cached = get_transient($cache_key);
+		if ($cached !== false) return $cached;
+
+		$res = wp_remote_get($posts_url, [
+			'timeout'   => 10,
+			'headers'   => $headers,
+			'sslverify' => (bool)$args['sslverify'],
+		]);
+
+		$items = [];
+		if (!is_wp_error($res) && wp_remote_retrieve_response_code($res) === 200) {
+			$data = json_decode(wp_remote_retrieve_body($res), true);
+			if (is_array($data)) $items = $data;
+			else $last_error = '投稿JSONが不正';
+		} else {
+			$last_error = is_wp_error($res) ? 'WP_Error: ' . $res->get_error_message()
+				: 'HTTP ' . wp_remote_retrieve_response_code($res) . ' on ' . $posts_url;
+		}
+
+		// --- 3) HTML生成 ---
+		ob_start();
+		echo '<ul class="p-top-news__lists">';
+		if (!empty($items)) {
+			foreach ($items as $p) {
+				$title = isset($p['title']['rendered']) ? wp_strip_all_tags($p['title']['rendered']) : '';
+				$link  = isset($p['link']) ? esc_url($p['link']) : '#';
+				$date_raw = isset($p['date']) ? $p['date'] : '';
+				$datetime_attr = $date_raw ? gmdate('Y-m-d', strtotime($date_raw)) : '';
+				$date_view     = $date_raw ? date_i18n('Y.m.d', strtotime($date_raw)) : '';
+				if ($title) $title = mb_strimwidth($title, 0, 80, '…', 'UTF-8');
+?>
+				<li class="p-top-news__list">
+					<a href="<?php echo $link; ?>" class="p-top-news__link" target="_blank" rel="noopener">
+						<?php if ($date_view): ?>
+							<time datetime="<?php echo esc_attr($datetime_attr); ?>" class="p-top-news__time"><?php echo esc_html($date_view); ?></time>
+						<?php endif; ?>
+						<p class="p-top-news__text"><?php echo esc_html($title ?: '（無題）'); ?></p>
+					</a>
+				</li>
+<?php
+			}
+		}
+		echo '</ul>';
+
+		if ((int)$args['debug'] === 1) {
+			echo '<!-- ext_render_remote_news debug: base=' . esc_html($args['base'])
+				. ' | cat_slug=' . esc_html($args['category_slug'])
+				. ' | cat_id=' . esc_html((string)$cat_id)
+				. ' | posts_url=' . esc_html($posts_url)
+				. ' | last_error=' . esc_html($last_error)
+				. ' -->';
+		}
+
+		$html = ob_get_clean();
+		set_transient($cache_key, $html, MINUTE_IN_SECONDS * max(1, (int)$args['cache_min']));
+		return $html;
+	}
+}
+
+// 一覧ボタンのリンク先（/news/ 運用ならここで固定）
+if (!function_exists('ext_remote_news_archive_url')) {
+	function ext_remote_news_archive_url($base = 'https://fukuda.first-step-yuma.com')
+	{
+		// 先方が /news/ を一覧にしている想定なら↓
+		return trailingslashit($base) . 'news/';
+		// 通常のカテゴリアーカイブなら: return trailingslashit($base) . 'category/news/';
+	}
+}
