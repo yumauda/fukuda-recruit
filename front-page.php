@@ -116,14 +116,14 @@
           <h2 class="p-top-people__top-title">
             <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/people_logo.png" alt="FUKUDAひと図鑑" width="396" height="239">
           </h2>
-          <div class="p-top-people__btn-wrapper">
+         <!--  <div class="p-top-people__btn-wrapper">
             <a href="#" class="p-top-people__btn">
               <p class="p-top-people__btn-text">さらに詳しく</p>
               <div class="p-top-people__btn-icon">
                 <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_news_btn_icon.png" alt="一覧を見る" width="431" height="38">
               </div>
             </a>
-          </div>
+          </div> -->
         </div>
         <div class="p-top-people__swiper">
           <!-- Slider main container -->
@@ -209,52 +209,7 @@
       </div>
     </div>
   </section>
-  <!-- <section class="p-top-news">
-    <div class="l-inner">
-
-      <div class="p-top-news__content">
-        <div class="p-top-news__left">
-          <div class="p-top-news__title-wrapper">
-            <h2 class="p-top-news__title">
-              <span class="p-top-news__title-en">News</span>
-              <span class="p-top-news__title-ja">お知らせ</span>
-            </h2>
-          </div>
-          <div class="p-top-news__btn-wrapper">
-            <a href="#" class="p-top-news__btn">
-              <p class="p-top-news__btn-text">一覧を見る</p>
-              <div class="p-top-news__btn-icon">
-                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_news_btn_icon.png" alt="一覧を見る" width="431" height="38">
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="p-top-news__right">
-          <ul class="p-top-news__lists">
-            <li class="p-top-news__list">
-              <a href="#" class="p-top-news__link">
-                <time datetime="<?php the_time('Y-m-d'); ?>" class="p-top-news__time">2025.09.13</time>
-                <p class="p-top-news__text">お知らせタイトルが入ります。ダミーテキストダミーテキストダミーテキストダミーテキスト</p>
-              </a>
-            </li>
-            <li class="p-top-news__list">
-              <a href="#" class="p-top-news__link">
-                <time datetime="<?php the_time('Y-m-d'); ?>" class="p-top-news__time">2025.09.13</time>
-                <p class="p-top-news__text">お知らせタイトルが入ります。ダミーテキストダミーテキストダミーテキストダミーテキスト</p>
-              </a>
-            </li>
-            <li class="p-top-news__list">
-              <a href="#" class="p-top-news__link">
-                <time datetime="<?php the_time('Y-m-d'); ?>" class="p-top-news__time">2025.09.13</time>
-                <p class="p-top-news__text">お知らせタイトルが入ります。ダミーテキストダミーテキストダミーテキストダミーテキスト</p>
-              </a>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-    </div>
-  </section> -->
+  
   <section class="p-top-news">
     <div class="l-inner">
       <div class="p-top-news__content">

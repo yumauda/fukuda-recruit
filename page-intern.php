@@ -136,12 +136,12 @@
                       <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/voice_img1.png" alt="s.hさん" width="280" height="280">
                     </figure>
                     <div class="p-voice__list-detail">
-                      <p class="p-voice__year">2020年度</p>
-                      <p class="p-voice__name"><span>S.H</span>さん</p>
+                      <p class="p-voice__year">2025年入社</p>
+                      <p class="p-voice__name"><span>S.T</span>さん</p>
                     </div>
                   </div>
                   <div class="p-voice__text-wrapper">
-                    <p class="p-voice__text">内容が入ります。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                    <p class="p-voice__text">インターンシップを通じて、社会人としての基本姿勢や業務の流れを学べた。実際の現場での体験では、専門学校で得た学びや知識を実践に結び付ける貴重な機会となり、自分の知識との整合性を図れた。知識だけでは得られない現場ならではの課題と工夫が学べた。実際の業務に触れることでやはり責任の大きさの違いに気づいた。特に、限られた期間内に造り上げる、かつ品質等も問われるという環境下の中で自ら考え行動する重要性を実感した。</p>
                   </div>
                 </div>
               </div>
@@ -152,12 +152,12 @@
                       <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/voice_img2.png" alt="s.hさん" width="280" height="280">
                     </figure>
                     <div class="p-voice__list-detail">
-                      <p class="p-voice__year">2020年度</p>
-                      <p class="p-voice__name"><span>S.H</span>さん</p>
+                      <p class="p-voice__year">2024年入社</p>
+                      <p class="p-voice__name"><span>A.S</span>さん</p>
                     </div>
                   </div>
                   <div class="p-voice__text-wrapper">
-                    <p class="p-voice__text">内容が入ります。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                    <p class="p-voice__text">当時、施工管理という職業についてあまり知りませんでした。そんな中で㈱フクダのインターンシップに参加し、施工管理とは何もないところに建物が建つすべての工程に携われるということを知りとても魅力を感じました。また、働いておられる方々が和気あいあいと仕事をしておられ職場環境の良さもとても印象的でした。</p>
                   </div>
                 </div>
               </div>
@@ -169,12 +169,12 @@
                       <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/voice_img3.png" alt="s.hさん" width="280" height="280">
                     </figure>
                     <div class="p-voice__list-detail">
-                      <p class="p-voice__year">2020年度</p>
-                      <p class="p-voice__name"><span>S.H</span>さん</p>
+                      <p class="p-voice__year">2023年入社</p>
+                      <p class="p-voice__name"><span>T.N</span>さん</p>
                     </div>
                   </div>
                   <div class="p-voice__text-wrapper">
-                    <p class="p-voice__text">内容が入ります。ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                    <p class="p-voice__text">すごくいい雰囲気で仕事ができるんだと思いました。上下関係がしっかりしていながらも仲の良さが出ていて、困ったことがあればすぐに聞きに行く方や、一緒に考えてくれる先輩の姿がいいなと思いました。勝手なイメージでしたが先輩は怖くて聞きにくいものだと思っていましたが、この会社には少ないと思いました。</p>
                   </div>
                 </div>
               </div>

@@ -48,6 +48,7 @@
   padding-right: rem(16);
   padding-bottom: rem(16);
   border-radius: rem(20);
+  height: 100%;
   @include mq(md) {
     padding-left: rem(45);
     padding-right: rem(45);
