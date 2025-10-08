@@ -2,13 +2,16 @@
 
 let swiper = new Swiper(".swiper1", {
   loop: true,
-  centeredSlides: false,
+  centeredSlides: true,
   speed: 300,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     768: {
-      slidesPerView: 2,
-      slidesPerGroup: 2,
-      spaceBetween: "25%",
+      slidesPerView: 3.6,
+      spaceBetween: 48,
     },
   },
 });

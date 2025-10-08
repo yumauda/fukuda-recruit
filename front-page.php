@@ -113,17 +113,8 @@
     <div class="l-inner">
       <div class="p-top-people__content">
         <div class="p-top-people__main">
-          <h2 class="p-top-people__top-title">
-            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/people_logo.png" alt="FUKUDAひと図鑑" width="396" height="239">
-          </h2>
-         <!--  <div class="p-top-people__btn-wrapper">
-            <a href="#" class="p-top-people__btn">
-              <p class="p-top-people__btn-text">さらに詳しく</p>
-              <div class="p-top-people__btn-icon">
-                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/top_news_btn_icon.png" alt="一覧を見る" width="431" height="38">
-              </div>
-            </a>
-          </div> -->
+
+
         </div>
         <div class="p-top-people__swiper">
           <!-- Slider main container -->
@@ -132,15 +123,10 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <a href="<?php echo home_url('/interview01'); ?>" class="p-top-people__item">
-                  <figure class="p-top-people__img w509">
-                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_1.png" alt="" width="499" height="574">
-                  </figure>
-                  <div class="p-top-people__detail">
-                    <h3 class="p-top-people__title">信頼を築き<br>成果を目指すヒト</h3>
-                    <p class="p-top-people__en">KENSUKE.Y</p>
-                    <p class="p-top-people__occupation">営業</p>
-                  </div>
+                <a href="<?php echo home_url('/interview01'); ?>" class="p-top-people__item p-top-people__item--none">
+                  <h2 class="p-top-people__top-title">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/people_logo.png" alt="FUKUDAひと図鑑" width="396" height="239">
+                  </h2>
                 </a>
               </div>
               <div class="swiper-slide">
@@ -184,7 +170,7 @@
                   <figure class="p-top-people__img w470">
                     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_5.png" alt="" width="499" height="574">
                   </figure>
-                  <div class="p-top-people__detail">
+                  <div class="p-top-people__detail p-top-people__detail--429">
                     <h3 class="p-top-people__title">失敗を糧に<br>強くなるヒト</h3>
                     <p class="p-top-people__en">KYOTA.I</p>
                     <p class="p-top-people__occupation">建築</p>
@@ -196,10 +182,22 @@
                   <figure class="p-top-people__img w429">
                     <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_6.png" alt="" width="499" height="574">
                   </figure>
-                  <div class="p-top-people__detail">
+                  <div class="p-top-people__detail p-top-people__detail--429">
                     <h3 class="p-top-people__title">前向きに<br>学び続けるヒト</h3>
                     <p class="p-top-people__en">REMI.A</p>
                     <p class="p-top-people__occupation">総務</p>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="<?php echo home_url('/interview01'); ?>" class="p-top-people__item">
+                  <figure class="p-top-people__img w509">
+                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/swiper_1.png" alt="" width="499" height="574">
+                  </figure>
+                  <div class="p-top-people__detail">
+                    <h3 class="p-top-people__title">信頼を築き<br>成果を目指すヒト</h3>
+                    <p class="p-top-people__en">KENSUKE.Y</p>
+                    <p class="p-top-people__occupation">営業</p>
                   </div>
                 </a>
               </div>
@@ -209,7 +207,7 @@
       </div>
     </div>
   </section>
-  
+
   <section class="p-top-news">
     <div class="l-inner">
       <div class="p-top-news__content">
