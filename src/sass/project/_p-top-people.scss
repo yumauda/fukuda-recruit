@@ -100,7 +100,7 @@
 .p-top-people__swiper--interview {
   margin-top: rem(32);
   @include mq(md) {
-    margin-top: rem(-440);
+    margin-top: rem(-240);
   }
 }
 .p-top-people__item {
@@ -203,4 +203,39 @@
   @include mq(md) {
     bottom: rem(-32);
   }
+}
+.p-top-people__arrows {
+  display: flex;
+  gap: rem(40);
+  justify-content: center;
+  margin-top: rem(16);
+}
+.p-top-people__arrows .swiper-button-next,
+.p-top-people__arrows .swiper-button-prev {
+  background: #fff;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(40);
+  height: rem(40);
+  @include mq(md) {
+    width: rem(64);
+    height: rem(64);
+  }
+}
+.p-top-people__arrows .swiper-button-next img,
+.p-top-people__arrows .swiper-button-prev img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center center;
+}
+.p-top-people__arrows .swiper-button-prev img {
+  transform: rotate(180deg);
+}
+.p-top-people__button-prev,
+.p-top-people__button-next {
+  border: 1px solid #4d4ca1;
+  border-radius: 9999px;
 }

@@ -1,18 +1,22 @@
 <section class="p-top-people p-top-people--interview">
     <div class="l-inner">
         <div class="p-top-people__content">
-            <div class="p-top-people__main">
-                <h3 class="p-top-people__top-title">
-                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/people_logo_white.png" alt="FUKUDAひと図鑑" width="396" height="239">
-                </h3>
 
-            </div>
             <div class="p-top-people__swiper p-top-people__swiper--interview">
                 <!-- Slider main container -->
                 <div class="swiper swiper1">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
+
+                        <div class="swiper-slide">
+                            <a href="<?php echo home_url('/interview01'); ?>" class="p-top-people__item p-top-people__item--none">
+                                <h2 class="p-top-people__top-title">
+                                    <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/people_logo_white.png" alt="FUKUDAひと図鑑" width="396" height="239">
+                                </h2>
+                            </a>
+                        </div>
+
                         <div class="swiper-slide">
                             <a href="<?php echo home_url('/interview01'); ?>" class="p-top-people__item">
                                 <figure class="p-top-people__img w509">
@@ -84,6 +88,16 @@
                                     <p class="p-top-people__occupation">総務</p>
                                 </div>
                             </a>
+                        </div>
+
+                    </div>
+                    <div class="p-top-people__arrows">
+                        <div class="swiper-button-prev" aria-label="前へ">
+                            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/slider-arrow.svg" alt="" width="40" height="40">
+                        </div>
+                        <div class="swiper-button-next" aria-label="次へ">
+                            <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/slider-arrow.svg" alt="" width="40" height="40">
+
                         </div>
                     </div>
                 </div>

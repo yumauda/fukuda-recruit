@@ -4,6 +4,10 @@ let swiper = new Swiper(".swiper1", {
   loop: true,
   centeredSlides: true,
   speed: 300,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   autoplay: {
     delay: 3000,
     disableOnInteraction: false,

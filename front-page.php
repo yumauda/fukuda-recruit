@@ -202,6 +202,15 @@
                 </a>
               </div>
             </div>
+            <div class="p-top-people__arrows">
+              <div class="swiper-button-prev p-top-people__button-prev" aria-label="前へ">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/slider-arrow.svg" alt="" width="40" height="40">
+              </div>
+              <div class="swiper-button-next p-top-people__button-next" aria-label="次へ">
+                <img decoding="async" loading="lazy" src="<?php echo get_template_directory_uri() ?>/images/common/slider-arrow.svg" alt="" width="40" height="40">
+
+              </div>
+            </div>
           </div>
         </div>
       </div>

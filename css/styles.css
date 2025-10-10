@@ -5467,7 +5467,7 @@ input::placeholder {
 }
 @media screen and (min-width: 768px) {
   .p-top-people__swiper--interview {
-    margin-top: -27.5rem;
+    margin-top: -15rem;
   }
 }
 
@@ -5597,6 +5597,66 @@ input::placeholder {
   .p-top-people__detail--4 {
     bottom: -2rem;
   }
+}
+
+.p-top-people__arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  gap: 2.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 16px;
+  margin-top: 1rem;
+}
+
+.p-top-people__arrows .swiper-button-next,
+.p-top-people__arrows .swiper-button-prev {
+  background: #fff;
+  border-radius: 9999px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 40px;
+  width: 2.5rem;
+  height: 40px;
+  height: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .p-top-people__arrows .swiper-button-next,
+  .p-top-people__arrows .swiper-button-prev {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+.p-top-people__arrows .swiper-button-next img,
+.p-top-people__arrows .swiper-button-prev img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.p-top-people__arrows .swiper-button-prev img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.p-top-people__button-prev,
+.p-top-people__button-next {
+  border: 1px solid #4d4ca1;
+  border-radius: 9999px;
 }
 
 .p-voice {
